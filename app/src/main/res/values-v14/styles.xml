@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkSquareColor</item>
+        <item name="colorPrimaryDark">@color/blackSquareColor</item>
+        <item name="colorAccent">@color/redSquareColor</item>
+
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:windowBackground">@color/whiteSquareColor</item> 
+        <item name="android:buttonStyle">@style/BaseButton</item> 
+        <item name="android:editTextStyle">@style/BaseEditTextWhite</item>
+        <item name="android:actionMenuTextColor">@color/blackSquareColor</item>
+
+    </style>
+
+    <style name="BaseButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@color/redSquareColor</item> 
+        <item name="android:textColor">@color/whiteSquareColor</item> 
+        <item name="android:layout_width">match_parent</item> 
+        <item name="android:layout_marginLeft">10dp</item> 
+        <item name="android:layout_marginRight">10dp</item> 
+    </style>
+
+    <!-- Edit Styles --> 
+    <style name="BaseEditText" parent="@android:style/Widget.EditText"> 
+        <item name="android:background">@drawable/underlined_666</item> 
+        <item name="android:textColor">@color/graySquareColor</item> 
+        <item name="android:textColorHint">@color/graySquareColor</item> 
+        <item name="android:maxLines">1</item> 
+        <item name="android:singleLine">true</item> 
+        <item name="android:layout_marginLeft">10dp</item> 
+        <item name="android:layout_marginRight">10dp</item> 
+        <item name="android:textSize">17sp</item> 
+    </style> 
+
+    <style name="BaseEditText2" parent="@android:style/Widget.EditText"> 
+        <item name="android:textColor">@color/graySquareColor</item> 
+        <item name="android:textColorHint">@color/graySquareColor</item> 
+        <item name="android:maxLines">1</item> 
+        <item name="android:singleLine">true</item> 
+        <item name="android:layout_marginLeft">10dp</item> 
+        <item name="android:layout_marginRight">10dp</item> 
+        <item name="android:textSize">13sp</item> 
+    </style> 
+    <!-- Edit Styles -->
+
+
+</resources>

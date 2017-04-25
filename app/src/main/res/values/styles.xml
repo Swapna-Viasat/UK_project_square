@@ -1,0 +1,393 @@
+<resources>
+
+    <!-- Splash Screen -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/redSquareColor</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkSquareColor</item>
+        <item name="colorPrimaryDark">@color/blackSquareColor</item>
+        <item name="colorAccent">@color/redSquareColor</item>
+        <item name="android:actionMenuTextColor">@color/blackSquareColor</item>
+
+
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:windowBackground">@color/whiteSquareColor</item> 
+        <item name="android:buttonStyle">@style/BaseButton</item> 
+        <item name="android:editTextStyle">@style/BaseEditTextWhite</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBarMain">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/darkSquareColor</item>
+        <item name="colorPrimaryDark">@color/blackSquareColor</item>
+        <item name="colorAccent">@color/redSquareColor</item>
+        <item name="android:windowBackground">@color/whiteSquareColor</item>
+    </style>
+
+    <style name="CreateJobFlowTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/whiteSquareColor</item>
+        <item name="colorPrimaryDark">@color/redSquareColor</item>
+        <item name="colorAccent">@color/redSquareColor</item>
+        <item name="android:textColor">@color/darkSquareColor</item>
+        <item name="android:actionMenuTextColor">@color/blackSquareColor</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Button Styles --> 
+
+    <style name="BaseButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@color/redSquareColor</item> 
+        <item name="android:textColor">@color/whiteSquareColor</item> 
+        <item name="android:padding">10dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="BaseSkipButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@color/graySquareColor</item> 
+        <item name="android:layout_width">match_parent</item> 
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/button_gray_border_shape</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="BaseSkipWhiteButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@color/graySquareColor</item> 
+        <item name="android:layout_width">match_parent</item> 
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/button_gray_border_white_solid</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Edit Styles --> 
+
+    <style name="BaseEditTextGray" parent="@android:style/Widget.EditText"> 
+        <item name="android:background">@drawable/underlined_666</item> 
+        <item name="android:textColor">@color/graySquareColor</item> 
+        <item name="android:textColorHint">@color/graySquareColor</item> 
+        <item name="android:maxLines">1</item> 
+        <item name="android:singleLine">true</item> 
+        <item name="android:layout_marginLeft">10dp</item> 
+        <item name="android:layout_marginRight">10dp</item> 
+        <item name="android:textSize">17sp</item> 
+    </style>
+     
+
+    <style name="BaseEditTextWhite" parent="@android:style/Widget.EditText"> 
+        <item name="android:textColorHint">@color/graySquareColor</item> 
+        <item name="android:textColor">@color/graySquareColor</item>
+        <item name="android:maxLines">1</item> 
+        <item name="android:singleLine">true</item> 
+        <item name="android:layout_marginLeft">5dp</item> 
+        <item name="android:layout_marginRight">10dp</item> 
+        <item name="android:textSize">16sp</item> 
+        <item name="android:inputType">textCapWords</item> 
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/apptheme_edit_text</item>
+    </style>
+     
+
+    <style name="BaseEditTextWhite2" parent="@android:style/Widget.EditText"> 
+        <item name="android:textColorHint">@color/graySquareColor</item> 
+        <item name="android:textColor">@color/graySquareColor</item>
+        <item name="android:maxLines">1</item> 
+        <item name="android:singleLine">true</item> 
+        <item name="android:layout_marginLeft">5dp</item> 
+        <item name="android:layout_marginRight">5dp</item> 
+        <item name="android:textSize">16sp</item> 
+        <item name="android:inputType">textCapWords</item> 
+    </style>
+     
+
+    <style name="DarkBackgroundOneNumberEditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/whiteSquareColor</item> 
+        <item name="android:textColor">@color/whiteSquareColor</item>
+        <item name="android:textSize">@dimen/caption_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item> 
+        <item name="android:maxLength">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="BaseEditTextTransparent" parent="@android:style/Widget.EditText"> 
+        <item name="android:textColorHint">@color/graySquareColor</item> 
+        <item name="android:textColor">@color/graySquareColor</item>
+        <item name="android:maxLines">1</item> 
+        <item name="android:singleLine">true</item> 
+        <item name="android:layout_marginLeft">5dp</item> 
+        <item name="android:layout_marginRight">10dp</item> 
+        <item name="android:textSize">16sp</item> 
+        <item name="android:inputType">textCapWords</item> 
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/apptheme_edit_text_transparent</item>
+    </style>
+     
+
+    <!-- Text Styles -->
+    <style name="light_big_dark_text">
+        <item name="android:textSize">@dimen/light_big_text_size</item>
+        <item name="android:textColor">@color/darkSquareColor</item>
+    </style>
+
+    <style name="light_big_white_text">
+        <item name="android:textSize">@dimen/light_big_text_size</item>
+        <item name="android:textColor">@color/whiteSquareColor</item>
+    </style>
+
+    <style name="title_dark_text">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@color/darkSquareColor</item>
+    </style>
+
+    <style name="title_red_text">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@color/redSquareColor</item>
+    </style>
+
+    <style name="title_white_text">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@color/whiteSquareColor</item>
+    </style>
+
+    <style name="subheader_dark_text">
+        <item name="android:textSize">@dimen/subheader_text_size</item>
+        <item name="android:textColor">@color/darkSquareColor</item>
+    </style>
+
+    <style name="subheader_gray_text">
+        <item name="android:textSize">@dimen/subheader_text_size</item>
+        <item name="android:textColor">@color/graySquareColor</item>
+    </style>
+
+    <style name="subheader_white_text">
+        <item name="android:textSize">@dimen/subheader_text_size</item>
+        <item name="android:textColor">@color/whiteSquareColor</item>
+    </style>
+
+    <style name="subheader_red_text">
+        <item name="android:textSize">@dimen/subheader_text_size</item>
+        <item name="android:textColor">@color/redSquareColor</item>
+    </style>
+
+    <style name="body_menu_dark_text">
+        <item name="android:textSize">@dimen/body_menu_text_size</item>
+        <item name="android:textColor">@color/darkSquareColor</item>
+    </style>
+
+    <style name="body_dark_text">
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">@color/darkSquareColor</item>
+    </style>
+
+    <style name="body_gray_text">
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">@color/graySquareColor</item>
+    </style>
+
+    <style name="body_red_text">
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">@color/redSquareColor</item>
+    </style>
+
+    <style name="body_white_text">
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">@color/whiteSquareColor</item>
+    </style>
+
+    <style name="caption_dark_text">
+        <item name="android:textSize">@dimen/caption_text_size</item>
+        <item name="android:textColor">@color/darkSquareColor</item>
+    </style>
+
+    <style name="caption_black_text">
+        <item name="android:textSize">@dimen/caption_text_size</item>
+        <item name="android:textColor">@color/blackSquareColor</item>
+    </style>
+
+    <style name="caption_gray_text">
+        <item name="android:textSize">@dimen/caption_text_size</item>
+        <item name="android:textColor">@color/graySquareColor</item>
+    </style>
+
+    <style name="caption_white_text">
+        <item name="android:textSize">@dimen/caption_text_size</item>
+        <item name="android:textColor">@color/whiteSquareColor</item>
+    </style>
+
+    <style name="error_text">
+        <item name="android:textSize">@dimen/error_text_size</item>
+        <item name="android:textColor">@color/redSquareColor</item>
+    </style>
+
+    <style name="square_edit_text" parent="Base.Widget.AppCompat.EditText">
+
+    </style>
+
+
+    <style name="TextRedGraftrs" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/redSquareColor</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="TextRedGraftrsBold" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/redSquareColor</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextGraftrst.White" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/whiteSquareColor</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="TextGraftrst.White.Mini">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextGraftrst.White.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextGraftrst.White.Medium">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextGraftrst.White.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextGraftrst.White.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextGraftrst.White.Bold.Mini">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextGraftrst.White.Bold.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextGraftrst.White.Bold.Medium">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextGraftrst.White.Bold.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextGraftrst.Black" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/blackSquareColor</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Mini">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Small2">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Medium">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Bold.Mini">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Bold.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Bold.Medium">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextGraftrst.Black.Bold.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextGraftrst.GrayLight" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/whiteSquareColor</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="TextGraftrst.GrayLight.EditText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextDefaultGraftrs" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+    <!-- Text Styles -->
+
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/lightSquareColor</item>
+    </style>
+
+    <!-- My Workers - Employer tabs -->
+
+    <style name="Tab">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Tab2">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="UnderstandingHeader">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+    <style name="UnderstandingBody">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

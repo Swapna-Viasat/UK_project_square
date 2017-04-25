@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    tools:context="construction.thesquare.employer.payments.PaymentsActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Nav -->
+    <LinearLayout
+        android:id="@+id/top"
+        android:weightSum="3"
+        android:background="@color/redSquareColor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/payments_1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp">
+
+            <ImageView
+                android:id="@+id/payments_subscription"
+                android:src="@drawable/payments_subscription"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/payments_subscription_label"
+                android:text="@string/payments_subscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payments_2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp">
+
+            <ImageView
+                android:id="@+id/payments_cards"
+                android:src="@drawable/payments_cards"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/payments_cards_label"
+                android:text="@string/payments_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payments_3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp">
+
+            <ImageView
+                android:id="@+id/payments_finish"
+                android:src="@drawable/payments_finish"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/payments_finish_label"
+                android:text="@string/payments_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/payments_content"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

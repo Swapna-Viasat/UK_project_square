@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="job_plural">
+        <item quantity="few">jobs</item>
+        <item quantity="many">jobs</item>
+        <item quantity="one">job</item>
+        <item quantity="other">jobs</item>
+        <item quantity="two">jobs</item>
+        <item quantity="zero">jobs</item>
+    </plurals>
+    <plurals name="year_plural">
+        <item quantity="few">years</item>
+        <item quantity="many">years</item>
+        <item quantity="one">year</item>
+        <item quantity="other">years</item>
+        <item quantity="two">years</item>
+        <item quantity="zero">years</item>
+    </plurals>
+    <plurals name="day_plural">
+        <item quantity="few">days</item>
+        <item quantity="many">days</item>
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+        <item quantity="two">days</item>
+        <item quantity="zero">days</item>
+    </plurals>
+</resources>

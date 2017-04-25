@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Created by Vadim Goroshevsky
+  ~ Copyright (c) 2017 The Square. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/worker_change_name"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:josefin_style="italic" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:hintEnabled="false">
+
+        <construction.thesquare.shared.view.widget.JosefinSansEditText
+            android:id="@+id/name"
+            style="@style/square_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sign_up_worker_step_personal_information_first_name_hint"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/surnameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:hintEnabled="false">
+
+        <construction.thesquare.shared.view.widget.JosefinSansEditText
+            android:id="@+id/surname"
+            style="@style/square_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sign_up_worker_step_personal_information_last_name_hint"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_cancel"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/onboarding_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/redSquareColor"
+            android:textSize="18sp"
+            app:josefin_style="bold" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/done"
+            style="@style/BaseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="@string/employer_rate_submit"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:josefin_style="bold" />
+    </LinearLayout>
+</LinearLayout>

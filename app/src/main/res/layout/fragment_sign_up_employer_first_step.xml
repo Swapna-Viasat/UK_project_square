@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/whiteSquareColor">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/light_big_dark_text"
+                app:josefin_style="light"
+                android:text="@string/sign_up_employer_step_1_title"
+                android:id="@+id/textView2"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/sign_up_employer_step_1_title_2"
+                android:id="@+id/textView4"
+                style="@style/subheader_gray_text"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/scrollView2"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eEmployerFirstStepFirstNameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:ems="10"
+                        style="@style/square_edit_text"
+                        android:inputType="textCapWords"
+                        android:id="@+id/eEmployerFirstStepFirstName"
+                        android:hint="@string/sign_up_employer_step_1_first_name_hint" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eEmployerFirstStepLastNameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eEmployerFirstStepLastName"
+                        android:hint="@string/sign_up_employer_step_1_last_name_hint"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        style="@style/square_edit_text"
+                        android:ems="10"
+                        android:inputType="textCapWords"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eEmployerFirstStepJobTitleWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eEmployerFirstStepJobTitle"
+                        android:hint="@string/sign_up_employer_step_1_job_title_hint"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        style="@style/square_edit_text"
+                        android:ems="10"
+                        android:inputType="textCapWords"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eEmployerFirstStepWorkEmailAddressWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eEmployerFirstStepWorkEmailAddress"
+                        android:hint="@string/sign_up_employer_step_1_work_email_hint"
+                        android:gravity="center_vertical"
+                        style="@style/square_edit_text"
+                        android:maxLines="1"
+                        android:ems="10"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eEmployerFirstStepPasswordWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:id="@+id/eEmployerFirstStepPassword"
+                        android:hint="@string/sign_up_employer_step_1_password_hint"
+                        android:gravity="center_vertical"
+                        style="@style/square_edit_text"
+                        android:maxLines="1"
+                        android:ems="10"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eEmployerFirstStepPassword2Wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eEmployerFirstStepPassword2"
+                        android:hint="@string/sign_up_employer_step_1_password2_hint"
+                        android:gravity="center_vertical"
+                        style="@style/square_edit_text"
+                        android:maxLines="1"
+                        android:ems="10"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eEmployerFirstStepCompanyRegistrationNumberWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eEmployerFirstStepCompanyRegistrationNumber"
+                        android:hint="@string/sign_up_employer_step_1_company_name_hint"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:maxLines="1"
+                        style="@style/square_edit_text"
+                        android:ems="10"
+                        android:inputType="textCapWords"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:id="@+id/btnEmployerFirstStepNext"
+                style="@style/BaseButton"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

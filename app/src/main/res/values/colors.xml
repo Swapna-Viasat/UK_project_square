@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MooTheme" parent="android:Theme">
+        <item name="android:spinnerItemStyle">@style/MooSpinnerItem</item>
+    </style>
+
+    <style name="MooSpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/MooTextAppearanceSpinnerItem</item>
+    </style>
+
+    <style name="MooTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#F00</item>
+    </style>
+
+    <!-- Square Guidelines colors -->
+    <color name="darkSquareColor">#444444</color>
+    <color name="redSquareColor">#EF4D39</color>
+    <color name="transparentRedSquareColor">#B3EF4D39</color>
+    <color name="graySquareColor">#B4B4B4</color>
+    <color name="lightSquareColor">#F8F8F8</color>
+    <color name="whiteSquareColor">#FFFFFF</color>
+    <color name="blackSquareColor">#000000</color>
+    <color name="transparentSquareColor">#00000000</color>
+    <color name="lightgraySquareColor">#F0F0F0</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="greenSquareColor">#1CA996</color>
+</resources>

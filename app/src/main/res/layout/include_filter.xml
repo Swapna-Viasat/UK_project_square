@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Dummy item to prevent EditText from receiving focus -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <View
+        android:layout_margin="12dp"
+        android:id="@+id/ibtnSearchItem"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@android:drawable/ic_search_category_default"
+        android:backgroundTint="@color/redSquareColor" />
+
+    <construction.thesquare.shared.view.widget.JosefinSansEditText
+        android:id="@+id/filter"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="@string/filter"
+        android:imeOptions="actionDone"
+        android:nextFocusLeft="@id/filter"
+        android:nextFocusUp="@id/filter"
+        android:paddingTop="4dp"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_margin="12dp"
+        android:id="@+id/clear_filter"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_clear_black_24dp"
+        android:backgroundTint="@color/redSquareColor" />
+</LinearLayout>

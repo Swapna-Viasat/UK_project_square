@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="15dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_light_logo"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:layout_marginLeft="@dimen/extra_big_padding"
+        android:layout_marginStart="@dimen/extra_big_padding"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:layout_alignParentBottom="true">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/worker_my_account_availability_icon"
+            android:layout_toEndOf="@id/worker_my_account_availability_icon"
+            app:josefin_style="light"
+            style="@style/title_white_text"
+            android:text="@string/availability"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/worker_menu_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/worker_menu_switch"
+            android:layout_toStartOf="@id/worker_menu_switch"
+            android:layout_marginRight="@dimen/small_padding"
+            android:layout_marginEnd="@dimen/small_padding"
+            style="@style/body_gray_text"
+            android:text="@string/immediatly"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_employer_my_jobs_home"
+            android:checked="true"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/menu_coming_soon_my_profile" />
+        <item
+            android:id="@+id/nav_employer_my_graftrs"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="@string/menu_coming_soon_how_it_works" />
+        <item
+            android:id="@+id/nav_employer_my_account"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/my_account_worker_title" />
+        <!--<item
+            android:id="@+id/nav_employer_my_messages"
+            android:icon="@drawable/ic_store"
+            android:title="Share the Square and Earn" />-->
+        <item
+            android:id="@+id/nav_employer_account"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/menu_coming_soon_log_out" />
+    </group>
+
+</menu>

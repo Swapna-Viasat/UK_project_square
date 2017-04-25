@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="construction.thesquare.employer.myjobs.fragment.WorkerDeclineFragment">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:text="@string/worker_details_decline"
+        android:textSize="22sp"
+        android:layout_marginTop="22dp"
+        app:josefin_style="italic"
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:outlineProvider="bounds"
+        android:elevation="4dp"
+        android:layout_below="@+id/title"
+        android:layout_margin="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:id="@+id/hint"
+        android:textSize="16sp"
+        app:josefin_style="italic"
+        android:text="@string/worker_details_decline_hint"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/graySquareColor"
+        android:layout_below="@+id/rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:layout_margin="14dp"
+        android:text="done"
+        android:id="@+id/done"
+        android:textAlignment="center"
+        android:layout_below="@+id/hint"
+        android:padding="12dp"
+        android:textColor="@color/whiteSquareColor"
+        android:background="@color/redSquareColor"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

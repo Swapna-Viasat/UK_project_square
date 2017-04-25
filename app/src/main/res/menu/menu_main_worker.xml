@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_worker_my_jobs_matches_home"
+            android:checked="true"
+            android:icon="@drawable/ic_thumb_up_black_24dp"
+            android:title="@string/menu_worker_my_jobs_matches_home" />
+        <item
+            android:id="@+id/nav_worker_my_jobs"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="@string/menu_worker_my_jobs" />
+        <item
+            android:id="@+id/nav_worker_my_account"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/menu_worker_my_account" />
+        <item
+            android:id="@+id/nav_worker_share"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="@string/menu_worker_share" />
+        <item
+            android:id="@+id/nav_worker_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="@string/menu_worker_help" />
+        <item
+            android:id="@+id/nav_worker_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/menu_worker_log_out" />
+    </group>
+</menu>

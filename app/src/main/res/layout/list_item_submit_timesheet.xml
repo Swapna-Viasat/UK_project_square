@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graySquareColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="14">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/submit_timesheet_day_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/small_padding"
+            android:paddingBottom="@dimen/small_padding"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            style="@style/caption_gray_text"
+            android:text="@string/sat"/>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/submit_timesheet_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            style="@style/caption_gray_text"
+            app:josefin_style="bold"
+            android:text="16"/>
+
+        <construction.thesquare.shared.view.widget.GraftrsTick
+            android:id="@+id/submit_timesheet_didnt_work"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <construction.thesquare.shared.view.widget.GraftrsCounterView
+            android:id="@+id/submit_timesheet_worked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:shape="circle"
+            app:count="0"/>
+
+        <construction.thesquare.shared.view.widget.GraftrsCounterView
+            android:id="@+id/submit_timesheet_overtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:shape="square"
+            app:count="0"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:textSize="26sp"
+            app:josefin_style="light"
+            android:id="@+id/top"
+            android:textAlignment="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:textColor="@color/blackSquareColor"
+            android:text="@string/create_job_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginBottom="76dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- New Feature ! Connect Header -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/connect_header"
+                android:textSize="18sp"
+                app:josefin_style="light"
+                android:padding="24dp"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:layout_marginBottom="12dp"
+                android:background="@color/redSquareColor"
+                android:textColor="@color/whiteSquareColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- New Feature ! Connect Radio Buttons -->
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <LinearLayout
+                    android:background="#ededed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Connect YES -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ededed"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="12dp">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:id="@+id/title1"
+                            android:layout_marginRight="32dp"
+                            android:text="@string/connect_connect_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/blackSquareColor"
+                            android:textSize="16sp"
+                            app:josefin_style="italic" />
+
+                        <CheckBox
+                            android:id="@+id/check_connect"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true" />
+                    </RelativeLayout>
+
+                    <View
+                        android:background="@color/graySquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <!-- Connect NO -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ededed"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:id="@+id/title2"
+                            android:layout_marginRight="32dp"
+                            android:text="@string/connect_connect_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/blackSquareColor"
+                            android:textSize="16sp"
+                            app:josefin_style="italic" />
+
+                        <CheckBox
+                            android:checked="true"
+                            android:id="@+id/check_book"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Description -->
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <LinearLayout
+                    android:background="#ededed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/tvDescriptionTitleCreateJobFifthStep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        style="@style/body_dark_text"
+                        android:text="@string/create_job_employer_step5_short_description_subtitle"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/description"
+                        android:gravity="top"
+                        android:padding="12dp"
+                        android:text="Overview of role\nExpected Hours\nDuration of job" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Description -->
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <LinearLayout
+                    android:background="#ededed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        style="@style/body_dark_text"
+                        android:text="Name your job"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/job_name"
+                        android:gravity="top"
+                        android:padding="12dp"
+                        android:text="Enter a name" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Budget -->
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:background="#ededed"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/create_job_employer_step5_budget_subtitle"/>
+
+                    <RadioGroup
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hour"
+                            android:checked="true"
+                            android:layout_weight="1"
+                            android:id="@+id/rb_hour"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day"
+                            android:layout_weight="1"
+                            android:id="@+id/rb_day"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Year"
+                            android:layout_weight="1"
+                            android:id="@+id/rb_year"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="POA"
+                            android:layout_weight="1"
+                            android:id="@+id/rb_poa"/>
+                    </RadioGroup>
+
+                    <RelativeLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="-31dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/seek_bar_start"
+                            android:text="@string/min_hourly"
+                            android:textSize="14sp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@color/graySquareColor"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/seek_bar_end"
+                            android:text="@string/max_hourly"
+                            android:textSize="14sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/graySquareColor"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <construction.thesquare.shared.view.widget.HourRateSeekBar
+                        android:id="@+id/hour_seek_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:indeterminate="false"
+                        android:max="193"
+                        android:paddingTop="42dp"
+                        android:paddingEnd="12dp"
+                        android:paddingStart="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <construction.thesquare.shared.view.widget.DayRateSeekBar
+                        android:visibility="gone"
+                        android:id="@+id/day_seek_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:indeterminate="false"
+                        android:max="194"
+                        android:paddingTop="42dp"
+                        android:paddingEnd="12dp"
+                        android:paddingStart="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <construction.thesquare.shared.view.widget.YearRateSeekBar
+                        android:id="@+id/year_seek_bar"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:indeterminate="false"
+                        android:max="285"
+                        android:paddingTop="42dp"
+                        android:paddingEnd="12dp"
+                        android:paddingStart="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Paying overtime hours? -->
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:background="#ededed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/create_job_employer_step5_paying_hours_subtitle"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/overtime_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/yes"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true">
+
+                            <LinearLayout
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp" />
+
+                            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                style="@style/body_dark_text"
+                                android:text="How much?"/>
+
+                            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                style="@style/body_dark_text"
+                                android:text="£"/>
+
+                            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:nextFocusUp="@+id/overtime"
+                                android:nextFocusLeft="@+id/overtime"
+                                android:maxLines="1"
+                                style="@style/square_edit_text"
+                                android:id="@+id/overtime"
+                                android:hint="        "
+                                android:inputType="number" />
+
+                            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                style="@style/body_dark_text"
+                                android:text="p/h"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- New Feature ! Connect Contact Info  -->
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/connect_contact_info"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:background="#ededed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/connect_contact"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        style="@style/caption_dark_text"
+                        android:text="@string/connect_contact_header" />
+
+                    <!-- Person  -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/connect_person"
+                        android:layout_marginTop="12dp" />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/connect_person_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:id="@+id/connect_person"
+                            style="@style/square_edit_text"
+                            android:inputType="textCapWords" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- Phone -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/connect_number"
+                        android:layout_marginTop="12dp" />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/connect_phone_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/ccp_connect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:defaultNameCode="GB"
+                                app:keyboardAutoPopOnSearch="true"/>
+
+                            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:id="@+id/connect_phone"
+                                android:hint="@string/key_contact_mobile_number"
+                                style="@style/square_edit_text"
+                                android:inputType="phone"/>
+                        </LinearLayout>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- Email  -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/connect_email"
+                        android:layout_marginTop="12dp" />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/connect_email_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:id="@+id/connect_email"
+                            style="@style/square_edit_text"
+                            android:inputType="textEmailAddress" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- New Feature ! Connect Deadline  -->
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/connect_deadline"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:background="#ededed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/connect_application_deadline"/>
+
+                    <!-- Date and time -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!-- Date -->
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true">
+
+                            <ImageButton
+                                android:padding="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/connect_date"
+                                android:tint="@color/redSquareColor"
+                                android:src="@drawable/ic_date_range_black_24dp"
+                                android:background="@null"/>
+
+                            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_margin="8dp"
+                                android:id="@+id/edit_connect_date"
+                                android:text="Day         "
+                                android:inputType="textCapSentences" />
+                        </LinearLayout>
+                        <!-- Time -->
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true">
+
+                            <ImageButton
+                                android:padding="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/connect_time"
+                                android:tint="@color/redSquareColor"
+                                android:src="@drawable/ic_date_range_black_24dp"
+                                android:background="@null"/>
+
+                            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_margin="8dp"
+                                android:id="@+id/edit_connect_time"
+                                android:text="Time        "
+                                android:inputType="textCapSentences" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Reporting to -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/book_contact_info"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:background="#ededed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/create_job_employer_step5_reporting_to_subtitle_1"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/caption_dark_text"
+                        android:text="@string/create_job_employer_step5_reporting_to_subtitle_2" />
+
+                    <!-- Contact -->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_layout_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            style="@style/square_edit_text"
+                            android:id="@+id/contact"
+                            android:hint="@string/contact_person"
+                            android:inputType="textCapSentences"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- Phone -->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_layout_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/ccp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:defaultNameCode="GB"
+                                app:keyboardAutoPopOnSearch="true"/>
+
+                            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:id="@+id/phone"
+                                android:hint="@string/key_contact_mobile_number"
+                                style="@style/square_edit_text"
+                                android:inputType="phone"/>
+                        </LinearLayout>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- Address -->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_layout_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minLines="2"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/address"
+                            android:textColor="@android:color/darker_gray"
+                            android:text="@string/address_turn_up_new" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <!-- Date and time -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/create_job_employer_step5_date_arrive_subtitle"
+                        android:layout_marginTop="12dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true">
+
+                            <ImageButton
+                                android:padding="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/date"
+                                android:tint="@color/redSquareColor"
+                                android:src="@drawable/ic_date_range_black_24dp"
+                                android:background="@null"/>
+
+                            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_margin="8dp"
+                                android:id="@+id/edit_date"
+                                android:text="Day         "
+                                android:inputType="textCapSentences" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true">
+
+                            <ImageButton
+                                android:padding="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/time"
+                                android:tint="@color/redSquareColor"
+                                android:src="@drawable/ic_date_range_black_24dp"
+                                android:background="@null"/>
+
+                            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_margin="8dp"
+                                android:id="@+id/edit_time"
+                                android:text="Time        "
+                                android:inputType="textCapSentences" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <!-- Anything else to note -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/body_dark_text"
+                        android:text="@string/create_job_employer_step5_note_subtitle"
+                        android:layout_marginTop="12dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_layout_extra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:id="@+id/extra"
+                            android:hint="Anything else to note"
+                            style="@style/square_edit_text"
+                            android:inputType="textCapSentences" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:background="@color/graySquareColor"
+                android:layout_alignParentBottom="true"
+                android:text="@string/create_job_preview2"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:padding="18dp"
+                android:layout_weight="1"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:textAllCaps="true"
+                android:id="@+id/preview"
+                android:textColor="@android:color/white"
+                app:josefin_style="semiBold"
+                android:layout_width="0dp"
+                android:elevation="2dp"
+                android:layout_height="wrap_content" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:background="@color/redSquareColor"
+                android:text="@string/create_job_publish"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:padding="18dp"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:id="@+id/post"
+                android:textColor="@android:color/white"
+                app:josefin_style="semiBold"
+                android:layout_width="0dp"
+                android:elevation="2dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

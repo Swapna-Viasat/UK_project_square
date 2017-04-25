@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteSquareColor">
+
+    <LinearLayout
+        android:id="@+id/start_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnComingSoonEmployerUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/update_my_profile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            style="@style/BaseButton"/>
+
+        <Button
+            android:id="@+id/btnComingSoonEmployerHowItWorks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/how_it_works"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            style="@style/BaseButton"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/start_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/start_buttons_layout">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvComingSoonEmployerMainText"
+            android:layout_centerInParent="true"
+            android:text="@string/coming_soon_employers_main_text"
+            android:gravity="center_horizontal"
+            android:lineSpacingMultiplier="1.5"
+            style="@style/title_dark_text" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tvComingSoonEmployerSecondText"
+            android:text="@string/coming_soon_second_text"
+            style="@style/title_dark_text"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

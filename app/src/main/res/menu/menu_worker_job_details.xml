@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/job_like"
+        android:id="@+id/job_like"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_like" />
+
+    <item
+        android:title="@string/job_unlike"
+        android:id="@+id/job_unlike"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_like_tab" />
+
+    <item
+        android:title="@string/job_share"
+        android:id="@+id/job_share"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_share" />
+</menu>

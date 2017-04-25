@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<construction.thesquare.employer.createjob.adapter.SquareLayout
+    android:padding="2dp"
+    android:layout_margin="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/graySquareColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparentSquareColor" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/blur"
+            android:scaleType="centerCrop"
+            android:background="#80FF0000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/title"
+                android:textSize="18sp"
+                android:layout_margin="8dp"
+                android:layout_gravity="left"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                app:josefin_style="light"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</construction.thesquare.employer.createjob.adapter.SquareLayout>

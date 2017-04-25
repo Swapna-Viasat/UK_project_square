@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:text="@string/employer_dialog_contract_end"
+        android:textSize="20sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="160dp"
+        android:layout_gravity="start|left"
+        android:textColor="@color/blackSquareColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_margin="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/worked_yes"
+            android:gravity="right"
+            android:button="@null"
+            android:textSize="18sp"
+            android:drawableTint="@color/redSquareColor"
+            android:drawableRight="@drawable/rb_workers_dialog"
+            android:drawablePadding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:layout_marginTop="12dp"
+            android:id="@+id/worked_no"
+            android:gravity="right"
+            android:button="@null"
+            android:textSize="18sp"
+            android:drawableTint="@color/redSquareColor"
+            android:drawableRight="@drawable/rb_workers_dialog"
+            android:drawablePadding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="@string/employer_dialog_contract_cancel"
+            android:textColor="@color/redSquareColor"
+            android:layout_margin="14dp"
+            android:id="@+id/dialog_contract_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="@string/employer_dialog_contract_next"
+            android:textColor="@color/redSquareColor"
+            android:layout_margin="14dp"
+            android:id="@+id/dialog_contract_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

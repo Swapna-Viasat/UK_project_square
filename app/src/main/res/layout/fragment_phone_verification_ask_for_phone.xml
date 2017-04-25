@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteSquareColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        android:orientation="vertical">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/tvAskForPhoneFirstTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/light_big_dark_text"
+            app:josefin_style="light"
+            android:paddingBottom="10dp"
+            android:text="@string/phone_verification_first_title" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/tvAskForPhoneSecondTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/subheader_gray_text"
+            android:layout_marginBottom="30dp"
+            android:text="@string/phone_verification_second_title" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="15dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:defaultNameCode="GB"
+                app:keyboardAutoPopOnSearch="false"/>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/askForPhonePhoneNumberEditTextWrapper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                app:hintEnabled="false">
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/square_edit_text"
+                    android:hint="@string/phone_verification_phone_text"
+                    android:textColorHint="#999999"
+                    android:id="@+id/askForPhonePhoneNumberEditText"
+                    android:inputType="number"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <!--android:background="@drawable/underlined_666"-->
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/caption_dark_text"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/phone_verification_third_title" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/terms"
+            style="@style/caption_dark_text"
+            app:josefin_style="bold"
+            android:layout_marginBottom="30dp"
+            android:text="@string/phone_verification_third_title_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/askForPhoneVerifyButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/BaseButton"
+                android:text="@string/phone_verification_button_text"/>
+            </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

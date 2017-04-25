@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_margin="12dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"/>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:textSize="20sp"
+            android:textColor="@color/blackSquareColor"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/close"
+            android:text="@string/employer_payments"
+            app:josefin_style="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="14dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/employer_payments_name"
+                app:josefin_style="italic"
+                android:textColor="@color/blackSquareColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                android:hint="@string/employer_payments_name_hint"
+                android:id="@+id/name_in"
+                android:layout_marginTop="12dp"
+                android:inputType="text|textCapWords|textNoSuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/employer_payments_number"
+                app:josefin_style="italic"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/blackSquareColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                android:hint="@string/employer_payments_number_hint"
+                android:id="@+id/number_in"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/employer_payments_expiration"
+                app:josefin_style="italic"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/blackSquareColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/ic_calendar"
+                    android:backgroundTint="@color/redSquareColor"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"/>
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:hint="@string/employer_payments_month"
+                    android:id="@+id/month_exp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="12dp"
+                    android:inputType="number"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text=" / "
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:hint="@string/employer_payments_year"
+                    android:id="@+id/year_exp"
+                    android:layout_weight="2"
+                    android:layout_gravity="bottom"
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/employer_payments_cvc"
+                app:josefin_style="italic"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/blackSquareColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                android:hint="@string/employer_payments_cvc_hint"
+                android:id="@+id/cvc_in"
+                android:inputType="number"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:text="@string/employer_payments_add_go"
+        android:id="@+id/action2"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:padding="14dp"
+        android:layout_margin="8dp"
+        android:textAlignment="center"
+        android:background="@color/redSquareColor"
+        android:textColor="@color/whiteSquareColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Vadim Goroshevsky
+  ~ Copyright (c) 2017 The Square Tech. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- upload Photo-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/worker_onboarding_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightgraySquareColor"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/onboarding_uploadpic"
+                    android:textColor="@color/blackSquareColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/maximize"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:paddingBottom="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/maximize" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/passport_photo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:background="@color/lightgraySquareColor"
+                android:scaleType="center"
+                android:src="@drawable/passport" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Next -->
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:background="@color/redSquareColor"
+        android:padding="18dp"
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:josefin_style="semiBold" />
+</RelativeLayout>

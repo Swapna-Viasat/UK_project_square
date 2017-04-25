@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_employer_my_jobs_home"
+            android:checked="true"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="@string/menu_employer_my_jobs_home" />
+        <item
+            android:id="@+id/nav_employer_my_graftrs"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="@string/menu_employer_my_graftrs" />
+        <item
+            android:id="@+id/nav_employer_account"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/menu_employer_my_account" />
+        <item
+            android:id="@+id/nav_employer_subscription"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="@string/employer_account_price_plan"/>
+        <item
+            android:visible="false"
+            android:id="@+id/nav_employer_edit_profile"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="@string/menu_employer_edit_profile" />
+        <item
+            android:id="@+id/nav_employer_share"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="@string/menu_worker_share" />
+        <item
+            android:id="@+id/nav_employer_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="@string/menu_employer_help" />
+        <item
+            android:id="@+id/nav_employer_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/menu_employer_log_out" />
+    </group>
+
+</menu>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/activity_job_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_margin="12dp"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/review_details_name"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:text="@string/work_again"
+                android:textColor="@color/redSquareColor"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <android.support.v7.widget.CardView
+                android:layout_margin="14dp"
+                card_view:elevation="8dp"
+                card_view:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@color/lightgraySquareColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/again"
+                        android:text="@string/employer_reviews_work_again"
+                        android:layout_margin="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioGroup
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:id="@+id/radio_group"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:text="Yes"
+                            android:textSize="12dp"
+                            android:id="@+id/radio_yes"
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:text="No"
+                            android:textSize="12dp"
+                            android:clickable="false"
+                            android:id="@+id/radio_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/review_details_overview"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- Quality of work -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field1"
+                android:layout_gravity="center"
+                android:text="@string/employer_reviews_environment"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_quality"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- Reliability -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field2"
+                android:layout_gravity="center"
+                android:text="@string/employer_reviews_team"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_reliability"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- Attitude -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field3"
+                android:layout_gravity="center"
+                android:text="@string/employer_reviews_pay"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_attitude"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- Safety -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field4"
+                android:layout_gravity="center"
+                android:text="@string/employer_reviews_induction"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_safety"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

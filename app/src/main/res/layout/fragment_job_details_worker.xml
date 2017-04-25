@@ -1,0 +1,386 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".worker.jobdetails.JobDetailActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <!-- Hints -->
+                <RelativeLayout
+                    android:id="@+id/hintsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/appliedHintView"
+                        style="@style/subheader_white_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/redSquareColor"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/job_applied_pending"
+                        android:visibility="gone"
+                        app:josefin_style="italic" />
+
+                    <LinearLayout
+                        android:id="@+id/approvedHintView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/redSquareColor"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/ic_like_tab"
+                            android:tint="@android:color/white" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:id="@+id/bookedHint"
+                            style="@style/subheader_white_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/redSquareColor"
+                            android:gravity="left|center"
+                            android:padding="10dp"
+                            android:text="@string/job_details_success_message"
+                            app:josefin_style="italic" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- General Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightSquareColor">
+
+                    <include layout="@layout/job_list_item" />
+                </LinearLayout>
+
+                <!-- Reporting to -->
+                <LinearLayout
+                    android:id="@+id/approvedHint"
+                    android:orientation="vertical"
+                    android:background="@color/darkSquareColor"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:text="@string/job_details_reporting_to"
+                            android:layout_marginBottom="6dp"
+                            android:id="@+id/preview_reporting_to"
+                            android:textColor="@android:color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:drawablePadding="18dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <!-- Message Icon for v2 -->
+                        <View
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:visibility="gone"
+                            android:background="@drawable/ic_message"/>
+                    </RelativeLayout>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/reportingToTextView"
+                        android:textColor="@color/graySquareColor"
+                        android:textSize="16dp"
+                        app:josefin_style="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/reportingToPhoneTextView"
+                        android:textColor="@color/graySquareColor"
+                        android:textSize="16dp"
+                        app:josefin_style="italic"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/contactEmailView"
+                        android:textColor="@color/graySquareColor"
+                        android:textSize="16dp"
+                        app:josefin_style="italic"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                    <!-- Address to turn up at -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/addressToArriveLabel"
+                        android:text="@string/job_details_turn_up_address"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/reportingToAddressTextView"
+                        android:textColor="@color/graySquareColor"
+                        android:textSize="16dp"
+                        app:josefin_style="italic"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <!-- Date and time to arrive -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/dateToArriveLabel"
+                        android:text="@string/job_details_date_arrival"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/dateToArriveTextView"
+                        android:textColor="@color/graySquareColor"
+                        android:textSize="16dp"
+                        app:josefin_style="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <!-- Anything else to note -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/job_details_notes"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/elseToNoteTextView"
+                        android:textColor="@color/graySquareColor"
+                        android:textSize="16dp"
+                        app:josefin_style="italic"
+                        android:text="@string/employer_worker_details_bio_placeholder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <!-- Info -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Description -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/job_description"
+                        android:id="@+id/job_details_description_label"
+                        android:textSize="16sp"
+                        android:drawablePadding="18dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/job_details_description"
+                        android:textSize="14sp"
+                        app:josefin_style="italic"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <!-- Qualifications -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/job_details_qualifications"
+                        android:id="@+id/job_details_qualifications_label"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp"
+                        android:drawablePadding="18dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/job_details_qualifications2"
+                        android:textSize="14sp"
+                        app:josefin_style="italic"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- Requirements -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="Practical Requirements"
+                        android:id="@+id/job_details_reqs_label"
+                        android:textSize="16sp"
+                        android:drawablePadding="18dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/job_details_qualifications"
+                        android:textSize="14sp"
+                        app:josefin_style="italic"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <!-- English Level -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/job_details_english_level"
+                        android:id="@+id/job_details_english_level_label"
+                        android:textSize="16sp"
+                        android:drawablePadding="18dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/job_details_english_level"
+                        android:textSize="14sp"
+                        app:josefin_style="italic"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- Skills -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/skills_required2"
+                        android:id="@+id/job_details_skills_label"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp"
+                        android:drawablePadding="18dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/job_details_skills"
+                        android:textSize="14sp"
+                        app:josefin_style="italic"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <!-- Experience Types -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/job_details_experience_types"
+                        android:id="@+id/job_details_experience_types_label"
+                        android:textSize="16sp"
+                        android:drawablePadding="18dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/job_details_experience_types"
+                        android:textSize="14sp"
+                        app:josefin_style="italic"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- Overtime -->
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/job_details_overtime"
+                        android:id="@+id/job_details_overtime_label"
+                        android:textSize="16sp"
+                        android:drawablePadding="18dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/job_details_overtime"
+                        app:josefin_style="italic"
+                        android:textSize="14sp"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!-- Map -->
+                <fragment
+                    android:id="@+id/map_fragment_worker"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Action Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/acceptOfferBtn"
+                style="@style/BaseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/greenSquareColor"
+                android:text="Accept offer"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnWorkerFirstStepNext"
+                style="@style/BaseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/apply" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

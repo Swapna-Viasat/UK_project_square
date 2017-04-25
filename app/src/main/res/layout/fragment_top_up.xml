@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="construction.thesquare.employer.payments.fragment.TopUpFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:textSize="18sp"
+            android:textColor="@color/redSquareColor"
+            android:text="@string/payments_more_booking"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            app:josefin_style="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Left -->
+            <LinearLayout
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text="Booking Top Up"
+                    android:textSize="18sp"
+                    app:josefin_style="italic"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="4dp"
+                    android:background="@color/blackSquareColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text="(valid for 30 days)"
+                    android:layout_marginTop="4dp"
+                    android:textSize="8sp"
+                    app:josefin_style="italic"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Right -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical|right|end"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:textSize="18sp"
+                    android:textColor="@color/redSquareColor"
+                    android:text="10 bookings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:textSize="18sp"
+                        android:textColor="@color/redSquareColor"
+                        android:text="£299"
+                        app:josefin_style="light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:textSize="8sp"
+                        android:textColor="@color/redSquareColor"
+                        android:text=" +VAT"
+                        app:josefin_style="light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Action Continue -->
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:text="Top up now"
+            android:textSize="18sp"
+            android:id="@+id/continue_top_up"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_margin="12dp"
+            android:padding="12dp"
+            app:josefin_style="italic"
+            android:background="@color/redSquareColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Tip -->
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="12dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text="@string/payments_tip_title"
+                    android:textColor="@color/redSquareColor"
+                    android:textSize="18sp"
+                    app:josefin_style="light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text="@string/payments_tip_body"
+                    android:textColor="@color/blackSquareColor"
+                    android:textSize="16sp"
+                    app:josefin_style="light"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Action Change Plan -->
+        <LinearLayout
+            android:id="@+id/change_plan"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:background="@color/redSquareColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/payments_upgrade_now"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                app:josefin_style="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/payments_terms_conditions"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                app:josefin_style="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

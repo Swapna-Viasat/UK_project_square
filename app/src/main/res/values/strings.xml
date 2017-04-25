@@ -1,0 +1,1300 @@
+<resources>
+
+    <string name="phone_verification_first_title">To join The Square, please enter your email and mobile number.</string>
+    <string name="phone_verification_second_title">(to give you the best experience on The Square)</string>
+    <string name="phone_verification_third_title">By entering your phone number and email you agree with </string>
+    <string name="phone_verification_third_title_bold">The Square Terms and Conditions</string>
+    <string name="phone_verification_first_title_welcome_back">Welcome Back!</string>
+    <string name="phone_verification_second_title_reconfirm">(Please reconfirm your mobile number) </string>
+    <string name="phone_verification_button_text">Confirm</string>
+    <string name="phone_verification_country_code_hint">+44</string>
+    <string name="phone_verification_phone_text">Phone Number</string>
+    <string name="phone_verification_email_text">Email</string>
+    <string name="phone_verification_thanks">Thanks!</string>
+    <string name="phone_verification_code_sent">We\'re just verifying your number. If this doesn\'t happen within 10 seconds, please enter the code we\'ve just text to %1$s and we\'ll get you started.</string>
+    <string name="phone_verification_did_not_receive_sms">Didn\'t receive SMS?\nResend code.
+    </string>
+    <string name="phone_verification_number_not_right">Number not right?\nEdit number.</string>
+
+    <string name="phone_verification_error_message">Hmmm. Your number doesn\'t look right. Make sure
+        you\'ve entered the correct country code and number </string>
+    <string name="phone_verification_continue">Continue</string>
+    <string name="phone_verification_validate_failed">Please enter a 4 digit code.</string>
+
+    <string name="sign_up_worker_step_personal_information_post_code_hint">Home postcode*</string>
+    <string name="sign_up_worker_step_personal_information_email_hint">Email address</string>
+    <string name="sign_up_worker_step_personal_information_last_name_hint">Last Name*</string>
+    <string name="sign_up_worker_step_personal_information_first_name_hint">First Name*</string>
+    <string name="sign_up_worker_step_personal_information_password_mandatory_hint">Create a Password*</string>
+    <string name="sign_up_worker_step_personal_information_confirmation_password_mandatory_hint">Re-enter a password*</string>
+    <string name="sign_up_worker_step_personal_information_password_not_mandatory_hint">Create a Password</string>
+    <string name="sign_up_worker_step_personal_information_confirmation_password_not_mandatory_hint">Re-enter a password</string>
+
+    <string name="sign_up_worker_step_personal_information_title">OK! We just need\na few details from
+        you&#8230;</string>
+    <string name="sign_up_worker_step_personal_information_title_2">Please enter your details below...</string>
+
+
+    <string name="sign_up_worker_step_roles_title_before_name">OK</string>
+    <string name="sign_up_worker_step_roles_title_after_name">, which one job\nbest describes what you do?</string>
+    <string name="up_to_three">(Select up to 3)</string>
+
+    <string name="sign_up_worker_step_experience_title">More about you...</string>
+
+    <string name="sign_up_worker_step_experience_years_title">Experience in Years</string>
+    <string name="sign_up_worker_step_experience_qualifications">Your Qualifications</string>
+    <string name="sign_up_worker_step_experience_how_good_english">How good is your English</string>
+    <string name="sign_up_worker_step_4_title">Please complete your\nCSCS details.</string>
+    <string name="sign_up_worker_step_skills_title">Please select any specific skills you have</string>
+    <string name="sign_up_worker_step_experience_type_title">What specific experience do you have?</string>
+    <string name="sign_up_worker_step_trades_title_1">What trades is your %s role associated to?</string>
+    <string name="sign_up_worker_step_trades_title_2">What trades are your %s roles associated to?</string>
+    <string name="sign_up_worker_step_qualifications_title">Do you have any qualifications?</string>
+    <string name="sign_up_worker_step_location_title">Work location preferences.</string>
+    <string name="sign_up_worker_step_location_commute_question">How long are you happy to commute for?</string>
+    <string name="sign_up_worker_step_rate_title">Availability \&amp; Rate</string>
+    <string name="sign_up_worker_step_rate_day_rate">Your preferred day rate</string>
+    <string name="sign_up_worker_step_rate_availability_to_work">What\'s your availability to work?
+    </string>
+    <string name="immediatly">Immediately</string>
+    <string name="sign_up_worker_step_rate_immediatly_hint">(I can start tomorrow)</string>
+    <string name="just_looking">I\'m Just Looking</string>
+    <string name="sign_up_worker_step_rate_just_looking_hint">(from next week onwards)</string>
+
+    <string name="sign_up_worker_step_company_title">Add any notable companies you\'ve worked for
+    </string>
+
+
+    <string name="sign_up_employer_step_1_title">OK! We just need a few details\n about you and your
+        company
+    </string>
+    <string name="sign_up_employer_step_1_title_2">All details are for The Square use only</string>
+    <string name="sign_up_employer_step_1_first_name_hint">First Name*</string>
+    <string name="sign_up_employer_step_1_last_name_hint">Last Name*</string>
+    <string name="sign_up_employer_step_1_job_title_hint">Your Job Title*</string>
+    <string name="sign_up_employer_step_1_work_email_hint">Your work email address*</string>
+    <string name="sign_up_employer_step_1_password_hint">Create password*</string>
+    <string name="sign_up_employer_step_1_password2_hint">Re-enter password*</string>
+    <string name="sign_up_employer_step_1_password_not_mandatory_hint">Create a password</string>
+    <string name="sign_up_employer_step_1_password2_not_mandatory_hint">Re-enter password</string>
+    <string name="sign_up_employer_step_1_company_name_hint">Company registration number</string>
+    <string name="sign_up_employer_step_1_upload_image_title">Upload your company image logo from
+    </string>
+    <string name="sign_up_employer_step_1_upload_image_title_2">(optional)</string>
+    <string name="sign_up_employer_step_1_upload_image_title_3">Logo should be png transparent less
+        than 1 MB
+    </string>
+    <string name="sign_up_employer_step_1_upload_image_btn_gallery">GALLERY</string>
+    <string name="sign_up_employer_step_1_upload_image_btn_dropbox">DROPBOX</string>
+    <string name="sign_up_employer_step_1_upload_image_btn_drive">DRIVE</string>
+    <string name="sign_up_employer_step_1_btn_next">CONTINUE</string>
+
+    <string name="sign_up_employer_step_1_validation_first_name">Please enter your first name</string>
+    <string name="sign_up_employer_step_1_validation_last_name">Please enter your last name</string>
+    <string name="sign_up_employer_step_1_validation_job_title">Please enter the job title</string>
+    <string name="sign_up_employer_step_1_validation_email_address">Please enter your email address</string>
+    <string name="sign_up_employer_step_1_validation_password">Please enter a password</string>
+    <string name="sign_up_employer_step_1_validation_password_confirmation">Please re-enter a password</string>
+    <string name="sign_up_employer_step_1_validation_password_match">The password and confirmation password do not match</string>
+
+
+    <string name="validate_first">Please enter your first name</string>
+    <string name="validate_last">Please enter your last name</string>
+    <string name="empty_email">Please enter your email address</string>
+    <string name="validate_password">Please enter a password</string>
+    <string name="validate_password_reenter">Please re-enter a password</string>
+    <string name="validate_password_match">The password and confirmation password do not match</string>
+    <string name="validate_zip">Please enter a valid postal code</string>
+    <string name="validate_email">Please enter a valid email address</string>
+
+
+    <string name="sign_up_employer_step_company_title">Company information</string>
+    <string name="sign_up_employer_step_company_name_hint">Company name*</string>
+    <string name="sign_up_employer_step_company_add_address_label">Add registered company address
+    </string>
+    <string name="sign_up_employer_step_company_add_address_hint">Search by address or postcode*
+    </string>
+    <string name="sign_up_employer_step_company_upload_logo_label">Upload your company logo*
+    </string>
+    <string name="sign_up_employer_step_company_btn_search_address">SEARCH</string>
+    <string name="sign_up_employer_step_company_btn_skip">Complete later</string>
+    <string name="sign_up_employer_step_company_btn_next">CONTINUE</string>
+
+
+    <string name="sign_up_employer_step_2_title">You\'are almost done\!</string>
+    <string name="sign_up_employer_step_2_title_2">Key finance contact information</string>
+    <string name="sign_up_employer_step_2_title_3">The person that receives and pay invoices
+    </string>
+    <string name="sign_up_employer_step_2_contact_first_name_hint">Contact first name*</string>
+    <string name="sign_up_employer_step_2_contact_last_name_hint">Contact last name*</string>
+    <string name="sign_up_employer_step_2_contact_telephone_hint">Contact telephone*</string>
+    <string name="sign_up_employer_step_2_contact_email_hint">Contact e-mail*</string>
+    <string name="sign_up_employer_step_2_registered_address_hint">Company registered address
+    </string>
+    <string name="sign_up_employer_step_2_registration_number_hint">Company registration number
+    </string>
+    <string name="sign_up_employer_step_1_company_registration_number_help">We will need this before you can get matched to workers.</string>
+    <string name="sign_up_employer_step_2_timesheet_title">Timesheet management preferences</string>
+    <string name="sign_up_employer_step_2_timesheet_subtitle">Do you want workers to submit their
+        own invoices for your approval or do you want to complete all invoices on their behalf?
+    </string>
+    <string name="sign_up_employer_step_2_timesheet_option_one">We\'ll complete all invoices
+    </string>
+    <string name="sign_up_employer_step_2_timesheet_option_two">Workers can submit their own
+        invoices for our approval
+    </string>
+    <string name="sign_up_employer_step_2_worker_payments_title">Worker payments</string>
+    <string name="sign_up_employer_step_2_worker_payments_subtitle">The Square automatically handles
+        all worker payments to make it simpler for you. If you\'d like to pay workers directly,
+        please check the button below.
+    </string>
+    <string name="sign_up_employer_step_2_worker_option_one">I want to pay workers directly</string>
+    <string name="sign_up_employer_step_2_worker_option_two">I want The Square to handle all worker
+        payments
+    </string>
+    <string name="done">DONE</string>
+    <string name="ok">OK</string>
+
+    <string name="pop_up_title_great">GREAT\!</string>
+    <string name="pop_up_message_successful_registration">Your mobile has been verified.</string>
+
+
+    <string name="title_activity_main_worker">MainWorkerActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="menu_employer_my_jobs_home">My Jobs</string>
+    <string name="menu_employer_my_graftrs">My Workers</string>
+    <string name="menu_employer_my_messages">My Messages</string>
+    <string name="menu_employer_my_account">My Account</string>
+    <string name="menu_employer_help">Help</string>
+    <string name="menu_employer_log_out">Log out</string>
+    <string name="menu_employer_edit_profile">Edit Profile</string>
+
+    <string name="menu_worker_my_jobs_matches_home">Job Matches</string>
+    <string name="menu_worker_my_jobs">My Jobs</string>
+    <string name="menu_worker_my_messages">My Messages</string>
+    <string name="menu_worker_my_account">My Account</string>
+    <string name="menu_worker_help">Help</string>
+    <string name="menu_worker_share">Share The Square</string>
+    <string name="menu_worker_log_out">Log out</string>
+    <string name="menu_worker_edit_profile">Edit Profile</string>
+
+    <string name="menu_coming_soon_my_profile">My Profile</string>
+    <string name="menu_coming_soon_how_it_works">How it Works</string>
+    <string name="menu_coming_soon_share">Share te Square &amp; Earn</string>
+    <string name="menu_coming_soon_log_out">Log out</string>
+
+
+    <string name="create_job_employer_step_roles_title">What kind of worker are you looking for?</string>
+    <string name="create_job_employer_step_roles_filter_hint">Search roles</string>
+    <string name="create_job_employer_step_trades_title">Which trades do you require?</string>
+
+    <string name="create_job_employer_step_2_title">What experience and qualifications are you
+        looking for?
+    </string>
+    <string name="create_job_employer_step2_experience_subtitle">Experience in Years</string>
+    <string name="create_job_employer_step2_qualifications_subtitle">Qualifications needed</string>
+    <string name="create_job_employer_step2_qualifications_cscs_card_up_to_date">Up to date CSCS
+        Card
+    </string>
+    <string name="create_job_employer_step2_qualifications_vocational_qualification">Vocational
+        Qualification NVQ/SVQ
+    </string>
+    <string name="create_job_employer_step2_qualifications_driving_license_up_to_date">Up to date
+        Driving License
+    </string>
+    <string name="create_job_employer_step2_english_level_subtitle">Candidate\'s English Language
+        Proficiency
+    </string>
+    <string name="create_job_employer_step2_english_level_native">Native</string>
+    <string name="create_job_employer_step2_english_level_fluent">Fluent</string>
+    <string name="create_job_employer_step2_english_level_not_mandatory">Not Mandatory</string>
+    <string name="create_job_employer_step_3_title">Are there any specific skills you\'re looking
+        for?
+    </string>
+    <string name="create_job_employer_step_4_title">Where\'s the job location?</string>
+    <string name="create_job_employer_step_5_title">Add job details</string>
+    <string name="create_job_employer_step5_short_description_subtitle">Short Description</string>
+    <string name="create_job_employer_step5_budget_subtitle">Your Budget per</string>
+    <string name="create_job_employer_step5_budget_day">Day</string>
+    <string name="create_job_employer_step5_budget_month">Month</string>
+    <string name="create_job_employer_step5_budget_year">Year</string>
+    <string name="create_job_employer_step5_paying_hours_subtitle">Paying overtime hours?</string>
+    <string name="create_job_employer_step5_reporting_to_subtitle_1">Reporting to</string>
+    <string name="create_job_employer_step5_reporting_to_subtitle_2">All marked information will be
+        provided to the booked candidate
+    </string>
+    <string name="create_job_employer_step5_type_job_subtitle">Type Jop</string>
+    <string name="create_job_employer_step5_type_job_permanent">Permanent</string>
+    <string name="create_job_employer_step5_type_job_contract">Contract</string>
+    <string name="create_job_employer_step5_date_arrive_subtitle">Date and Time to arrive</string>
+    <string name="create_job_employer_step5_note_subtitle">Anything else to note</string>
+
+    <string name="create_job_employer_step_payments_preferences_title">Great! You\' are almost done.\n How do you want to pay?</string>
+    <string name="create_job_employer_step_payments_preferences_subtitle">Try it out or subscribe and get unlimited access...</string>
+    <string name="create_job_employer_step_payments_preferences_option_try">Try it out for 250</string>
+    <string name="create_job_employer_step_payments_preferences_option_try_inf">1 job promotion for up to week.\nUp to 20 suitable candidate matches.</string>
+
+    <string name="create_job_employer_step_payments_preferences_option_subscribe">Subscribe for 500 / month</string>
+    <string name="create_job_employer_step_payments_preferences_option_subscribe_inf">Hire at anytime, from anywhere on any device.\nUnlimited job promotions.\nUnlimited bookings.\nTrack previous candidates &amp; hires\nAccess to one of the fastest growing construction networks in the world.</string>
+    <string name="create_job_employer_step_payments_preferences_discount_text">If you have a special discount code enter at payment stage.</string>
+    <string name="create_job_employer_step_payments_preferences_terms_and_conditions_text">Term &amp; conditions apply.</string>
+
+    <string name="create_job_employer_step_prepay_title">Pre pay information</string>
+
+    <string name="title_activity_main_employer">MainEmployerActivity</string>
+    <string name="drawer_open">Abrir navigation drawer</string>
+    <string name="drawer_close">Cerrar navigation drawer</string>
+    <string name="headlines">Encabezados de</string>
+
+
+    <string name="title_activity_job_detail">Job Description</string>
+
+    <string name="welcome_text">Hey! Welcome to The Square.</string>
+    <string name="register_as_worker">REGISTER AS A WORKER</string>
+    <string name="register_as_employer">REGISTER AS AN EMPLOYER</string>
+    <string name="already_have_account">I ALREADY HAVE AN ACCOUNT</string>
+
+    <string name="get_started">Get started</string>
+
+    <string name="tutorial_employer_one_title">Safe &amp; skilled workers</string>
+    <string name="tutorial_employer_two_title">Quicker &amp; easier hiring</string>
+    <string name="tutorial_employer_three_title">Cheaper &amp; more transparent</string>
+    <string name="tutorial_employer_four_title">The smarter way to hire</string>
+
+    <string name="tutorial_employer_one_text">The Square is building the largest database of safe and skilled construction workers in the world. Once registered you get access to the best workers near you.</string>
+    <string name="tutorial_employer_two_text">Review and book workers immediately knowing their skills and how they\'ve been rated by previous employers.</string>
+    <string name="tutorial_employer_three_text">We automate the recruitment process to save you money and provide a better, more transparent experience.</string>
+    <string name="tutorial_employer_four_text">If you\'re looking for quality skilled workers, create your account now.</string>
+    <!--<string name="tutorial_employer_five_text">You can pay invoices quickly and easily through the
+        app or via BACS or bank transfer.
+    </string>-->
+
+    <string name="tutorial_worker_one_title">Earn more</string>
+    <string name="tutorial_worker_two_title">Save time</string>
+    <string name="tutorial_worker_three_title">Work with the best</string>
+    <string name="tutorial_worker_four_title">Live well</string>
+    <string name="tutorial_worker_five_title">Sleep easy</string>
+
+    <string name="tutorial_worker_one_text">The Square uses clever technology to cut out the middleman. That means more cash in your back pocket.</string>
+    <string name="tutorial_worker_two_text">Once your profile is live, we\'ll notify you \n as soon as you\'re matched to a job that suits you. \nWe do the hard graft for you 24/7.</string>
+    <string name="tutorial_worker_three_text">As one of the fastest growing networks of skilled construction workers in the world we attract the best companies in the industry.</string>
+    <string name="tutorial_worker_four_text">Working in partnership with Build UK and Trade Associations we\'re driving up Health and Safety standards, creating better working conditions for you.</string>
+    <string name="tutorial_worker_five_text">We take care of your monthly and annual tax returns, so you don\'t have to worry. We\'re making your life easier.</string>
+
+    <string name="search_where_work_hint">Search by postcode or address</string>
+    <string name="twenty_minutes">20min</string>
+    <string name="value_minutes">%1$dmin</string>
+    <string name="plus_two_hours">+2h</string>
+    <string name="skip_this_until_later">Skip this until later</string>
+    <string name="next">NEXT</string>
+
+    <string name="reject">Reject</string>
+    <string name="award">Award</string>
+
+    <string name="update_my_profile">Update my profile</string>
+    <string name="how_it_works">How it works</string>
+
+    <string name="yes">Yes</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="key_contact_mobile_number">Key contact mobile no.</string>
+    <string name="address_turn_up">Address to turn up at</string>
+    <string name="address_turn_up_new">To be confirmed -
+        \nspeak to the key contact for more information</string>
+    <string name="post_job">Post job</string>
+
+    <string name="search">Search</string>
+    <string name="apply">Apply</string>
+    <string name="job_description">Job Description</string>
+    <string name="view_more">View More</string>
+    <string name="skills_required">Skills Required</string>
+    <string name="skills_required2">Skills </string>
+    <string name="mandatory_requirements">Mandatory Requirements</string>
+
+    <string name="main_worker_advice">Better profiles get better jobs!\nUpdate yours now.</string>
+    <string name="worker_no_matches">You have no jobs matching your profile right now. Better profiles get better job matches.</string>
+    <string name="worker_myjobs_empty">No jobs in here yet! In the meantime, update your profile.</string>
+    <string name="worker_update_profile">Update yours now</string>
+    <string name="matching_jobs_profile">You have %1$s %2$s matching your profile</string>
+
+    <string name="filter">Search</string>
+
+    <string name="show_me_jobs">Show me jobs!</string>
+    <string name="finish_edition">Finish edition</string>
+
+    <string name="verify">Verify</string>
+    <string name="surname">Surname</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="individual_id_number">Individual ID/Registration Number</string>
+    <string name="national_insurance_number">National Insurance Number</string>
+
+
+    <string name="coming_soon_workers_main_text">We\'re busy getting The Square\nready for you. Make sure your\nprofile is complete &amp; accurate\nand we\'ll be in touch\nwith some of the best paying jobs\nnear you very soon</string>
+    <string name="coming_soon_employers_main_text">We\'re busy getting The Square\nready for you. Make sure your\nprofile is complete &amp; accurate\nand we\'ll be in touch once we have\nquality workers ready for you</string>
+    <string name="coming_soon_second_text">In the mean time...</string>
+
+    <!-- My Account Worker -->
+    <string name="my_account_worker_title">My Account</string>
+    <string name="profile_completeness">Profile %1$d%% complete</string>
+    <string name="availability">Availability</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="reviews">Reviews</string>
+    <string name="leaderboards">Leaderboards</string>
+    <string name="timesheets_invoices">Timesheets &amp; Invoices</string>
+
+
+    <!-- My Workers - Employer -->
+    <string name="employer_workers_booked">Booked</string>
+    <string name="employer_workers_applications">Offers &amp;\nApplications</string>
+    <string name="employer_workers_liked">Liked</string>
+    <string name="employer_workers_previous">Previous</string>
+    <string name="employer_workers_cancel">Cancel Booking</string>
+    <string name="employer_workers_invite">Quick Invite</string>
+    <string name="employer_workers_end">End Contract</string>
+    <string name="employer_dialog_quick_invite">Invite %s to a live job or create a private new one?</string>
+    <string name="employer_dialog_quick_invite_title">What do you want to do?</string>
+    <string name="employer_dialog_quick_invite_live">Invite to live job</string>
+    <string name="employer_dialog_quick_invite_new">New private job</string>
+    <string name="employer_dialog_booking_cancel">Cancel booking</string>
+    <string name="employer_dialog_booking_keep">Keep booking</string>
+    <string name="employer_dialog_booking_title">Are you sure you want to cancel this job booking?</string>
+    <string name="employer_dialog_booking">(Cancellation within 48 hours of job start date incur cancellation costs - see T&amp;Cs for details).</string>
+    <string name="employer_dialog_contract_end">End contract</string>
+    <string name="employer_dialog_contract_worked">Worked with %s</string>
+    <string name="employer_dialog_contract_worked_not">Didn\'t work with %s</string>
+    <string name="employer_dialog_contract_next">Next</string>
+    <string name="employer_dialog_contract_end_confirm">End</string>
+    <string name="employer_dialog_contract_cancel">Cancel</string>
+    <string name="employer_dialog_contract_ended">The contract is ended.</string>
+    <string name="employer_dialog_contract_ended_notify">We\'ll notify </string>
+    <string name="employer_dialog_contract_ended_name">[%s.]</string>
+    <string name="employer_dialog_contract_last_day">Select the last working day of %s. (included)</string>
+    <string name="employer_dialog_contract_day_hint">Day</string>
+    <string name="employer_dialog_contract_comments">Comments</string>
+    <string name="employer_dialog_withdraw_offer">Are you sure you want to withdraw this job offer?</string>
+    <string name="employer_dialog_contract_show">They didn\'t show up to work</string>
+
+    <string name="employer_worker_details">View Profile</string>
+    <string name="employer_worker_details_private">This is private job and only %s can see it.
+                \nYou\'re waiting for a response from John.</string>
+    <string name="employer_worker_details_job_view">View more</string>
+    <string name="employer_worker_details_availability">Availability</string>
+    <string name="employer_worker_details_testimonials">%s Testimonials</string>
+    <string name="employer_worker_details_hire_again">%s Would hire again</string>
+    <string name="employer_worker_details_bio">Bio</string>
+    <string name="employer_worker_details_bio_placeholder">Tell us a bit about yourself&#8230; (remember, better profiles get better job matches!)</string>
+
+    <string name="employer_worker_details_qualifications">Qualifications</string>
+    <string name="employer_worker_details_requirements">Requirements</string>
+    <string name="employer_worker_details_skills">Skills</string>
+    <string name="employer_worker_details_companies">Notable companies</string>
+    <string name="employer_worker_details_location">Preferred work location</string>
+    <string name="employer_worker_award">Award</string>
+    <string name="employer_worker_decline">Decline</string>
+    <string name="employer_worker_applied">Applied</string>
+
+    <!-- Worker Matches -->
+    <string name="worker_matches_menu_map">map</string>
+    <string name="worker_matches_menu_tune">tune</string>
+    <string name="item_match_format_experience">%1$d %2$s experience</string>
+    <string name="item_match_format_starts">Starts %s</string>
+    <string name="worker_job_like">Like job</string>
+    <string name="worker_job_unlike">Unlike job</string>
+    <string name="worker_job_open_details">Open job details</string>
+
+    <!--Worker Matches Filter-->
+    <string name="matches_filter_title">Filter &amp; Order By</string>
+    <string name="matches_filter_order_by">Order by</string>
+    <string name="matches_filter_best_paid">Best paid</string>
+    <string name="matches_filter_start_date">Start date</string>
+    <string name="matches_filter_nearest_me">Nearest me</string>
+    <string name="matches_filter_best_rated_employers">Best rated employers</string>
+
+    <!-- Worker Jobs -->
+    <string name="worker_jobs_booked">Booked &amp; Connected</string>
+    <string name="worker_jobs_offers_applications">Offers &amp;\nApplications</string>
+    <string name="worker_jobs_liked">Liked</string>
+    <string name="worker_jobs_completed">Completed</string>
+    <string name="worker_jobs_end_contract">End Contract</string>
+    <string name="worker_jobs_awaiting">Awaiting Response</string>
+    <string name="worker_jobs_declined">Didn\'t get it</string>
+    <string name="worker_job_details">Job Details</string>
+
+    <!-- Job Details -->
+    <string name="job_details_success_message">
+        Boom! You\'ve got the job.
+        \nAll the details about where you need to arrive and what you need to bring are available below.
+        \nGood luck.
+    </string>
+    <string name="job_details_reporting_to">Reporting to</string>
+    <string name="job_details_turn_up_address">Address to turn up at</string>
+    <string name="job_details_date_arrival">Date &amp; time to arrive</string>
+    <string name="job_details_notes">Anything else to note</string>
+    <string name="job_details_experience">Experience </string>
+    <string name="job_details_english_level">Level of English</string>
+    <string name="job_details_overtime">Overtime</string>
+    <string name="job_details_overtime_text">£%s per hour</string>
+    <string name="job_details_mandatory_requirements">Requirements </string>
+    <string name="job_details_qualifications">Qualifications </string>
+    <string name="job_details_experience_types">Types of experience </string>
+    <string name="job_details_availability">Availability </string>
+    <string name="job_details_booking_canceled">Booking canceled!</string>
+    <string name="job_like">Like</string>
+    <string name="job_unlike">Unlike</string>
+    <string name="job_share">Share</string>
+    <string name="error_input_empty">Input is empty!</string>
+    <string name="job_feedback">Your feedback</string>
+    <string name="job_feedback_hint">Please leave feedback for this job</string>
+    <string name="job_i_can_make_it">I can still make it</string>
+    <string name="job_applied_pending">You applied - Awaiting decision</string>
+    <string name="job_applied_title_1">Cool!\n\n You\'ve applied for the</string>
+    <string name="job_applied_title_2">job with</string>
+    <string name="job_applied_title_3">starting on</string>
+    <string name="job_applied_subtitle">We\'ll let you know as soon as they have made a decision!</string>
+    <string name="go_back_to_job_matches">Go back to job matches</string>
+    <string name="job_experience_value">%d years</string>
+    <string name="job_availability_immediately">Immediately</string>
+    <string name="job_id">Job ID: %s</string>
+    <string name="job_details_offered_amount">%d workers offered</string>
+    <string name="job_details_applied_amount">%d workers applied</string>
+    <string name="job_details_booked_amount">%d workers booked</string>
+    <string name="offered_hint">Great! \n\nYou\'ve offered %1$s the job of %2$s
+        \nstarting on %3$s
+        \n\nWe\'ll let you know as soon as they have made a decision! </string>
+    <string name="worker_details_decline">Why was this worker \nnot right?</string>
+    <string name="worker_details_decline_hint">This feedback will be sent to the worker</string>
+
+    <!-- My Accounts -->
+    <string name="view_profile">View Profile</string>
+    <string name="role_year_experience">%1$d %2$s experience</string>
+    <string name="title_activity_my_account_billing">Billing</string>
+    <string name="due_header">Due to be submitted</string>
+    <string name="awaiting_header">Awaiting approval</string>
+    <string name="approved_header">Approved</string>
+    <string name="approved_to_be_paid_header">Approved and due to be paid</string>
+    <string name="paid_header">Paid</string>
+    <string name="days_worked_from_to">Week from %1$s to %2$s</string>
+    <string name="submit_timesheet">Submit Timesheet</string>
+    <string name="sat">SAT</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="didnt_work">Didn\'t work</string>
+    <string name="hours_worked">Hours worked</string>
+    <string name="overtime">Overtime</string>
+    <string name="youll_get">You\'ll get</string>
+    <string name="submit_for_approval">Submit for approval</string>
+    <string name="submit">SUBMIT</string>
+    <string name="pending">PENDING</string>
+    <string name="timesheets_title">TIMESHEETS</string>
+    <string name="invoices_title">INVOICES</string>
+    <string name="financial_info_title">FINANCIAL INFO</string>
+    <string name="paid">PAID</string>
+
+
+    <!-- Worker Reviews -->
+    <string name="worker_reviews_received">Received</string>
+    <string name="worker_reviews_given">Given</string>
+    <string name="worker_reviews_pending">Pending</string>
+    <string name="worker_reviews_request">Request a reference</string>
+    <string name="worker_reviews_empty">Go ahead and request a reference</string>
+    <string name="worker_reviews_quality">Quality of work</string>
+    <string name="worker_reviews_reliability">Reliability</string>
+    <string name="worker_reviews_attitude">Attitude to work and team</string>
+    <string name="worker_reviews_safety">Safe worker</string>
+    <string name="menu_worker_reviews">Reviews</string>
+    <string name="worker_request_review">Great! Every review improves your star rating! \nTell us which employer you want to get a reference from? We\'ll send them an email request now.</string>
+    <string name="worker_request_review_first_name">First Name*</string>
+    <string name="worker_request_review_last_name">Last Name*</string>
+    <string name="worker_request_email">Email Address*</string>
+    <string name="worker_request_mobile">Mobile Number</string>
+    <string name="worker_request_company">Company*</string>
+    <string name="worker_request_date">Date Worked</string>
+    <string name="worker_request_error">You have to complete at least one</string>
+    <string name="worker_request_field">This field is required</string>
+    <string name="worker_request_sent_subtitle">Brilliant! \n Your reference request has been sent. We will let you know when it comes in.</string>
+    <string name="worker_review_action">Complete review</string>
+    <string name="worker_review_due">Due: %1$d %2$s left</string>
+    <string name="worker_review_request">Go ahead and \nrequest a reference</string>
+    <string name="worker_reviews_again">Would hire you again</string>
+    <string name="worker_reviews_requested_by_square">Requested by \n The Square</string>
+    <string name="worker_reviews_requested_by_worker">Requested by \n me</string>
+    <string name="worker_reviews_turned_up">of the time you turned up</string>
+    <string name="worker_reviews_companies_turned_up">of firms\nwould hire you again</string>
+    <string name="worker_reviews_requested_by_employer">Requested by \n Employer </string>
+
+    <!-- Employer Reviews -->
+    <string name="employer_reviews_work_again">Would work for you again</string>
+    <string name="employer_reviews_worker_again">Would you hire</string>
+    <string name="employer_reviews_environment">Good work environment</string>
+    <string name="employer_reviews_team">Good team</string>
+    <string name="employer_reviews_pay">Good pay</string>
+    <string name="employer_reviews_induction">Good induction &amp; training</string>
+    <string name="employer_reviews_on_worker_quality">Quality of work</string>
+    <string name="employer_reviews_on_worker_Reliability">Reliability</string>
+    <string name="employer_reviews_on_worker_attitude">Attitude towards work and team</string>
+    <string name="employer_reviews_on_worker_safe">Safe worker</string>
+    <string name="employer_rate_worker">Please rate %s\'s \nperformance</string>
+    <string name="employer_rate_submit">Done</string>
+    <string name="employer_rate_again">Did you hire %s?</string>
+    <string name="employer_rate_given">%s rating</string>
+    <string name="worker_turned_up">Did %s turn up?</string>
+    <string name="employer_review_request">You have no reviews to give right now! </string>
+    <string name="employer_review_request_detail">We\'ll let you know as soon as you do. Remember, reviews are super important for you, your workers and The Square community. Reviews should be done fast &amp; fairly.</string>
+    <string name="hire_again">You would hire %s\'s \n again</string>
+    <string name="not_hire_again">You wouldn\'t hire %s\'s \n again</string>
+    <string name="worker_rate_employer">Please rate %s\'s</string>
+    <string name="employer_reviews_workers_turned_up">of workers\nwould work for you again</string>
+    <string name="work_again">Would you work for them again? %s </string>
+
+    <!-- Employer My Account -->
+    <string name="employer_account_price_plan">My Price Plan</string>
+
+    <!-- Settings -->
+    <string name="settings_notify_reviews">Reviews</string>
+
+    <!-- Employer Settings -->
+    <string name="settings">Settings</string>
+    <string name="employer_settings_phone">Phone Number:</string>
+    <string name="employer_settings_email">Email: </string>
+    <string name="employer_settings_social">Social Networks</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="employer_settings_terms">Terms &amp; Privacy</string>
+    <string name="employer_settings_about">About &amp; Contact</string>
+    <string name="employer_settings_share">Share The Square</string>
+    <string name="employer_settings_logout">Log out</string>
+    <string name="employer_settings_sync_fb">Sync with Facebook</string>
+    <string name="employer_settings_sync_twtr">Sync with Twitter</string>
+    <string name="employer_settings_notify1">Worker &amp; app messages</string>
+    <string name="employer_settings_notify2">Job acceptance &amp; rejection</string>
+    <string name="employer_settings_terms_conditions">Terms &amp; Conditions</string>
+    <string name="employer_settings_privacy">Privacy Policy</string>
+    <string name="employer_settings_about_text">About</string>
+    <string name="employer_settings_faq">FAQ\'s</string>
+    <string name="employer_settings_contact">Contact</string>
+    <string name="employer_settings_describe">Please describe your problem:</string>
+    <string name="employer_settings_message">Your Message</string>
+    <string name="employer_settings_add">Add screenshots:</string>
+    <string name="employer_settings_optional">(Optional)</string>
+    <string name="employer_settings_send">Send</string>
+    <string name="employer_settings_logout_prompt">Are you sure you want to logout of The Square App?</string>
+    <string name="employer_settings_my_subscriptions">My Subscriptions</string>
+    <string name="employer_settings_security">Security</string>
+    <string name="employer_security_save">Save</string>
+    <string name="employer_password_update_success">Great! We have now updated your password.</string>
+
+    <!-- Worker Settings -->
+    <string name="new_job_matches">New job matches</string>
+    <string name="job_offers">Job offers</string>
+    <string name="job_booking_decline">Job booking &amp; declines</string>
+    <string name="worker_change_name">Edit your name</string>
+
+    <!-- Link to T&C -->
+    <string name="link_tc">http://www.thesquareapp.com/terms</string>
+
+
+    <!-- Employer create job -->
+    <string name="create_job_5">Oops, you have already selected 5!</string>
+    <string name="create_job_3">Oops, you have already selected 3!</string>
+    <string name="create_job_role">What kind of worker are you looking for?</string>
+    <string name="create_job_trade">What trade experience are you looking for from your %s ?</string>
+    <string name="create_job_qualifications">Are there any qualifications you are looking for?</string>
+    <string name="create_job_experience">What specific things are you looking for?</string>
+    <string name="create_job_skills">Are there any specific skills you are looking for?</string>
+    <string name="create_job_types_experience">Are there specific types of experience you are looking for?</string>
+    <string name="create_job_location">What is the job\'s postcode?</string>
+    <string name="create_job_search_postal">Enter a postal code</string>
+    <string name="create_job_address">Search address</string>
+    <string name="create_job_details">Add job details</string>
+    <string name="create_job_experience_years">%1$d %2$s experience</string>
+    <string name="create_job_experience_header">Experience in years</string>
+    <string name="create_job_cscs">Up to date CSCS Card</string>
+    <string name="create_job_dl">A valid UK Driving License</string>
+    <string name="create_job_vehicle">Own vehicle</string>
+    <string name="create_job_ppe">Own PPE</string>
+    <string name="create_job_tools">Own tools</string>
+    <string name="create_job_english">Spoken English</string>
+    <string name="create_job_english_native">Native</string>
+    <string name="create_job_english_fluent">Fluent</string>
+    <string name="create_job_english_basic">Basic</string>
+    <string name="create_job_english_optional">Not Mandatory</string>
+    <string name="create_job_map">Search address</string>
+    <string name="create_job_limit">(Select up to 5)</string>
+    <string name="create_job_crn">Please enter your company registration number:</string>
+    <string name="create_job_crn_placeholder">12345678</string>
+    <string name="create_job_invalid_crn">Something went wrong.</string>
+    <string name="create_job_check">Note: Workers are simply indicating they have these things.
+        Checks should be undertaken to satisfy any corporate or legal requirements.</string>
+    <string name="create_job_preview">Preview Job Post</string>
+    <string name="create_job_card">Registered Cardholder\'s Details</string>
+    <string name="create_job_first">First Name</string>
+    <string name="create_job_last">Surname</string>
+    <string name="create_job_card_number">Card Number</string>
+    <string name="create_job_expiration">Expiration Date</string>
+    <string name="create_job_cvc">CVV/CVC</string>
+    <string name="create_job_confirm">Confirm</string>
+    <string name="create_job_preview2">Preview</string>
+    <string name="create_job_publish">Promote Job</string>
+    <string name="create_job_apprentice">What type of %s are you looking for?</string>
+    <string name="create_job_abandon">Are you sure you want to exit?</string>
+    <string name="offer_job_confirm">Nice one! \n\n
+                Your job has been offered to %s. \n
+                They\'ll confirm their interest soon.</string>
+
+    <!-- Employer Liked Workers -->
+    <string name="employer_liked">The workers you like will appear here...</string>
+
+    <!-- Misc -->
+    <string name="pound_sterling">£</string>
+    <string name="min_hourly">£3.5</string>
+    <string name="max_hourly">£100</string>
+    <string name="min_daily">£30</string>
+    <string name="max_daily">£1,000</string>
+    <string name="min_yearly">£7,500</string>
+    <string name="max_yearly">£150,000</string>
+
+    <!-- Worker Onboarding -->
+    <string name="onboarding_intro">OK! We just need \na few details from you...</string>
+    <string name="onboarding_info">Please enter your name, address and profile picture</string>
+    <string name="onboarding_location">Where are you looking for work?</string>
+    <string name="onboarding_companies">Add any notable companies \nyou\'ve worked for.</string>
+    <string name="onboarding_roles">OK %s, which jobs \nbest describe what you do?</string>
+    <string name="onboarding_trades">You can choose up to 3 trades below...</string>
+    <string name="onboarding_trades_apprenticeships">(we recommend you don\'t select any, to be matched to all apprenticeships)</string>
+    <string name="onboarding_cscs">Please confirm your \nCSCS details.</string>
+    <string name="onboarding_cscs_surname">Surname</string>
+    <string name="onboarding_cscs_dob">Date of birth</string>
+    <string name="onboarding_cscs_registration">Individual ID/Registration Number</string>
+    <string name="onboarding_cscs_insurance">National Insurance Number</string>
+    <string name="onboarding_experience">More about you...</string>
+    <string name="onboarding_qualifications">Do you have any qualifications?</string>
+    <string name="onboarding_skills">What specific skills do you have? </string>
+    <string name="onboarding_experience_type">What specific experience \ndo you have?</string>
+    <string name="onboarding_availability">Availability</string>
+    <string name="onboarding_proceed">Show me jobs</string>
+    <string name="onboarding_commute">How long are you willing to commute for?</string>
+    <string name="onboarding_add_photo">Add photo!</string>
+    <string name="onboarding_take_photo">Take photo</string>
+    <string name="onboarding_choose_from_gallery">Choose from gallery</string>
+    <string name="onboarding_cancel">Cancel</string>
+    <string name="onboarding_select_image">Select image</string>
+    <string name="onboarding_english_level_error">Oops&#8230;! You need to indicate your English proficiency to be able to move on.</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_selected_max">Oops, you have already selected %d!</string>
+    <string name="onboarding_languagesspoken">Languages spoken</string>
+    <string name="onboarding_nationality">Nationality</string>
+    <string name="onboarding_uploadpic">Please upload photo of your passport</string>
+    <string name="onboarding_nin">Please enter your NIN Number</string>
+    <string name="onboarding_select_language">Select language</string>
+    <string name="save">Save</string>
+    <string name="worker_postcode">Home postcode</string>
+    <string name="worker_settings_security">Security</string>
+    <string name="worker_password">Change password</string>
+
+    <!-- Worker Account -->
+    <string name="worker_account_completeness">Profile %s Complete</string>
+    <string name="worker_account_availability">Availability</string>
+    <string name="worker_account_immediately">Immediately</string>
+    <string name="worker_account_tasks">My Tasks</string>
+    <string name="worker_account_reviews">Reviews</string>
+    <string name="worker_account_leaderboards">Leaderboards</string>
+    <string name="worker_account_timesheets">Timesheets &amp; Invoices</string>
+    <string name="worker_passport_photo">Photo of passport</string>
+    <string name="worker_cscs_card">CSCS Card</string>
+    <string name="worker_cscs_not_verified">Not verified</string>
+    <string name="worker_cscs_verified">Verified</string>
+    <string name="worker_cscs_reg_number">CSCS Card Registration Number</string>
+    <string name="worker_cscs_expires_ends">Expires Ends</string>
+    <string name="worker_cscs_record_category">Record - Category</string>
+    <string name="worker_english_level">Level of English</string>
+    <string name="worker_contact_info">Contact info</string>
+    <string name="worker_experience_types">Type of experience</string>
+    <string name="worker_details_provided">Provided</string>
+    <string name="worker_details_not_provided">Not provided</string>
+    <string name="worker_commute_time">I will travel up to %1$d mins from %2$s</string>
+    <string name="employer_view_worker_commute_time">Will travel up to %1$d mins from %2$s</string>
+
+    <!-- Employer Account -->
+    <string name="company_description">Company description</string>
+    <string name="account_user_management">Account user management</string>
+    <string name="subscription_plan_management">Subscription plan management</string>
+
+
+    <!-- Employer Payments -->
+    <string name="payments_topup_error">
+        Oops! \n\nYou can only Top Up if you already have a subscription.</string>
+    <string name="payments_topup_success">
+        Good stuff!
+        \n\nYou are now topped up.
+        \n\nHappy booking!
+    </string>
+    <string name="payments_success">Good news!
+                        \n\nYour account is now live.
+                        \n\nHappy booking!</string>
+    <string name="payments_standard_price"><strike>£1999+VAT</strike> \n£999+VAT</string>
+    <string name="payments_basic_price"><strike>£999+VAT</strike> \n£499+VAT</string>
+    <string name="payments_premium_price"><strike>£3598+VAT</strike> \n£1799+VAT</string>
+    <string name="payments_standard_bookings">50 bookings</string>
+    <string name="payments_premium_bookings">100 bookings</string>
+    <string name="payments_basic_bookings">20 bookings</string>
+    <string name="payments_vat">+VAT</string>
+
+    <string name="payments_subscription">Subscription</string>
+    <string name="payments_payment">Payment</string>
+    <string name="payments_finish">Finish</string>
+    <string name="payments_continue">Continue</string>
+    <string name="payments_add">Please Add Payment Method</string>
+    <string name="payments_sale">Choose your plan below to start your free month\'s trial!
+            \nAnd as one of the first to use The Square we\'ll give you 50%
+            off your subscription when it starts. Nice!</string>
+    <string name="payments_choose">Choose the monthly plan for you</string>
+    <string name="payments_recommended">Recommended</string>
+    <string name="payments_basic">Basic</string>
+    <string name="payments_standard">Standard</string>
+    <string name="payments_premium">Premium</string>
+    <string name="payments_bookings">Bookings</string>
+    <string name="payments_period">[per user, per month]</string>
+    <string name="payments_period2">per user, per month</string>
+
+    <string name="payments_address1">Address</string>
+    <string name="payments_address2">House No.</string>
+    <string name="payments_city">Town/City</string>
+    <string name="payments_country">Country</string>
+    <string name="payments_postcode">Postcode</string>
+    <string name="payments_voucher">Voucher Code</string>
+    <string name="payments_cancel">Cancel my subscription</string>
+    <string name="payments_change_card">Change card details</string>
+    <string name="payments_topup">Need a top up?</string>
+    <string name="payments_more_booking">Need more booking credits? Top up now!</string>
+    <string name="payments_tip_title">Tip...</string>
+    <string name="payments_tip_body">If you\'re going to use all your credits every month you
+                should also consider upgrading - it\'s cheaper in the long run!</string>
+    <string name="payments_upgrade_now">Upgrade Now</string>
+    <string name="payments_terms_conditions">Terms &amp; Conditions apply</string>
+    <string name="payments_click_here">Click here</string>
+
+    <string name="employer_payments">Subscription plan management</string>
+    <string name="employer_payments_questions">Got more questions?</string>
+    <string name="employer_payments_plan">Subscription Plan</string>
+    <string name="employer_payments_understanding">Understanding My Price Plan</string>
+    <string name="employer_payments_plan_mine">My Subscription Plan</string>
+    <string name="employer_payments_card">Credit Card</string>
+    <string name="employer_payments_current">Your current plan</string>
+    <string name="employer_payments_try">Try it out for \u00A3250</string>
+    <string name="employer_payments_try_text">1 job promotion for up to 1 week.
+                            \nUp to 20 suitable candidate matches.</string>
+    <string name="employer_payments_upgrade">Upgrade my plan</string>
+    <string name="employer_payments_upgrade_here">Choose my plan</string>
+    <string name="employer_payments_due_date">Bill due %s</string>
+    <string name="employer_payments_upgrade_title">Subscribe for \u00A3500 / month</string>
+    <string name="employer_payments_upgrade_text">
+            Hire at any time, from anywhere on any device.
+            \nUnlimited job promotions.
+            \nUnlimited bookings.
+            \nTrack previous candidates &amp; hires.
+            \nAccess to one of the fastest growing construction networks in the world.
+    </string>
+    <string name="payments_booking_credits">My Booking Credits</string>
+    <string name="payments_alt_title_desc">If you can\'t pay by credit card we can send a VAT invoice to you or your preferred bill payer. Once paid, you will get access to The Square and will be able to promote jobs and get matched to workers.</string>
+    <string name="payments_alt_title">Please enter the details below
+                and we\'ll have the invoice sent out.</string>
+    <string name="payments_alt_error">Oops. Please fill in all the details first!</string>
+    <string name="payments_alt_spinner_title">Subscription plan</string>
+    <string name="payments_alt_name">Bill payer\'s name *</string>
+    <string name="payments_alt_email">Bill payer\'s email *</string>
+    <string name="payments_alt_order">Purchase Order Number (if needed)</string>
+    <string name="payments_alt_confirm">Confirm</string>
+    <string name="payments_alt_subtitle">We\'ll get an invoice to you and the bill payer
+                    automatically. The invoice will need to be paid by BACS. Once
+                    paid, you will be able to use The Square.
+                    \n\nAny queries, give us a call on 020 3868 6303 or email:
+                    accounts@thesquareapp.com</string>
+    <string name="payments_alt_note">Note: BACS payments require a minimum of six months subscription.</string>
+    <string name="payments_alt_popup_title">Good stuff!</string>
+    <string name="payments_alt_popup_text">An invoice is on its way to you and the bill payer.
+                        This will need to be paid before you can use The Square.</string>
+    <string name="payments_alt_popup_subtitle">See you Soon!</string>
+
+    <string name="payments_topups_display_bookings">%1$d / %2$d</string>
+    <string name="payments_plans_display_bookings">%1$d / %2$d</string>
+    <string name="payments_expiration_format">(Expires %s)</string>
+    <string name="payments_bill_due_format">Renews on %s</string>
+    <string name="payments_cant_pay_cc">Can\'t pay by credit card? (Tap for options)</string>
+    <string name="payments_cancel_title">Sorry you want to leave us...</string>
+    <string name="payments_cancel_subtitle">You will be able to use your remaining booking
+                        credits, but your plan will not renew next month.
+                        \n\nAre you sure you wish to cancel? </string>
+    <string name="payments_cancelled_title">
+        Sorry you are leaving us...
+        \n\nWe look forward to welcoming you back soon.
+    </string>
+    <string name="payments_cancelled_subtitle">
+        In the meantime, you will be able to use your remaining Booking Credits.
+    </string>
+    <string name="payments_payment_success">
+        Your transaction has gone through.
+        \n\nGo ahead and create your first job to get matched to workers.
+    </string>
+    <string name="payments_payment_success_voucher_job">
+        Your transaction has gone through and your one month\'s free trial starts today.
+    </string>
+    <string name="payments_payment_success_voucher">
+        Your transaction has gone through and your one month\'s free trial starts today.
+        \n\nGo ahead and create your first job to get matched to workers.
+    </string>
+    <string name="payments_payment_success_job">
+        Your transaction has gone through.
+    </string>
+    <string name="payments_voucher_wrong">Oops! \n\nVoucher Code not valid.</string>
+    <string name="payments_password">Confirm top up</string>
+    <string name="payments_password_plan">Confirm your subscription plan change</string>
+    <string name="payments_password_more">In order to top up,
+        please enter your password below: </string>
+    <string name="payments_password_more_plan">In order to change your subscription plan,
+        please enter your password below:</string>
+
+    <string name="employer_payments_discount">If you have a special discount code enter at payment stage.</string>
+    <string name="employer_payments_docs"><b>Terms &amp; Conditions</b> apply</string>
+    <string name="employer_payments_action">Upgrade</string>
+    <string name="employer_payments_add">Add new</string>
+    <string name="employer_payments_sure">Are you sure you want to delete %s credit card?</string>
+    <string name="employer_payments_yes">Yes</string>
+    <string name="employer_payments_cancel">Cancel</string>
+    <string name="employer_payments_name">Cardholder name</string>
+    <string name="employer_payments_name_hint">John Smith</string>
+    <string name="employer_payments_number">Card number</string>
+    <string name="employer_payments_number_hint">01234567891234567</string>
+    <string name="employer_payments_expiration">Card expiration</string>
+    <string name="employer_payments_month">Month</string>
+    <string name="employer_payments_year">Year</string>
+    <string name="employer_payments_add_go">Add</string>
+    <string name="employer_payments_cvc">Card CVC</string>
+    <string name="employer_payments_cvc_hint">480</string>
+    <string name="employer_payments_name_error">Please enter a name!</string>
+    <string name="employer_payments_number_error">Please enter a number!</string>
+    <string name="employer_payments_cvc_error">Please enter your card\'s CVC!</string>
+    <string name="employer_payments_month_error">Please enter a Month!</string>
+    <string name="employer_payments_year_error">Please enter a Year!</string>
+
+    <!-- Employer jobs -->
+    <string name="employer_create_job_prompt">Go ahead and create \na
+                job to find workers.</string>
+    <string name="employer_jobs_old">Old</string>
+    <string name="employer_jobs_live">Live</string>
+    <string name="employer_jobs_drafts">Drafts</string>
+    <string name="employer_jobs_booked">Booked &amp; \nConnected</string>
+    <string name="employer_jobs_offers">Offered &amp; \nApplied</string>
+    <string name="employer_jobs_matched">Matched</string>
+    <string name="employer_jobs_declined">Declined</string>
+    <string name="employer_jobs_new">New Job</string>
+    <string name="employer_jobs_create">Create a new job</string>
+    <string name="employer_jobs_duplicate">Duplicate &amp; edit a previous job details</string>
+    <string name="employer_jobs_ok">Ok</string>
+    <string name="employer_jobs_cancel">Cancel</string>
+    <string name="employer_jobs_experience">%1$d %2$s experience</string>
+    <string name="employer_jobs_starts">Starts %s</string>
+    <string name="employer_jobs_republish">Republish</string>
+    <string name="employer_jobs_not_posted">Not posted</string>
+    <string name="employer_jobs_awarded">Awarded to %s</string>
+    <string name="employer_jobs_cancel_prompt">Are you sure you want to cancel this job?</string>
+    <string name="title_activity_payments">PaymentsActivity</string>
+    <string name="employer_worker_booked">Cool! %s is now booked</string>
+    <string name="employer_worker_booked_more">All the arrival details have been provided to %s,
+                    so they\'ll be working with you soon...
+                    \n\nRemember, if anything changes,
+                    you\'ll need to contact them directly!</string>
+
+    <!-- CSCS Errorcodes -->
+    <string name="verified_cscs_success">Successfully Verified</string>
+    <string name="verified_cscs_failed">Verification error try again</string>
+    <string name="cscs_status_request_failed">Verification has not been requested yet</string>
+    <string name="cscs_status_infrastructure_issue">Sorry we\'re struggling to connect with CSCS right now, please try again later</string>
+    <string name="cscs_status_carddetails_invalid">Sorry, something\'s not right, please check your CSCS ID number and try again</string>
+
+    <!-- Passport upload-->
+    <string name="passport_nophoto">Please upload your passport before previewing</string>
+
+
+    <!-- SHARING is CARING -->
+    <string name="share_generic">Hey, I\'ve just joined The Square Construction.
+        It\'s great! You should check it out... </string>
+    <string name="share_description">
+        The Square Construction is the first automated hiring app for the industry
+        (a bit like Tinder but for construction jobs).
+        We\'re building the fastest growing network of skilled construction workers in the world.
+        Be one of the first to benefit!
+    </string>
+
+    <string name="share_employer_subject">%s wants you to join them on The Square</string>
+    <string name="share_worker_subject">%s wants you to join them on The Square</string>
+
+    <string name="share_play_store_url">
+        https://play.google.com/store/apps/details?id=construction.thesquare
+    </string>
+
+    <string name="share_employer_general_title">
+        Hey,
+        I\'ve just joined The Square.
+        It\'s the new app that matches you to the best quality construction workers when you need them.
+        It saves you a load of time, money and effort.
+        You should check it out.
+        Enjoy!
+    </string>
+    <string name="share_worker_general_image_url">https://www.thesquareapp.tech/assets/img/share2.png</string>
+
+    <string name="share_worker_general_title">
+        Hey,
+        I\'ve just joined The Square.
+        It\'s the new app that matches you to the best paying construction jobs near you.
+        You should check it out.
+        Enjoy!
+    </string>
+    <string name="share_employer_general_image_url">https://www.thesquareapp.tech/assets/img/share2.png</string>
+    <string name="title_activity_review_aggregate">ReviewAggregateActivity</string>
+
+
+    <string name="misc_intercom_key">android_sdk-70624f8b395b057a2078a8cc54ea9623d263bc96</string>
+    <string name="misc_intercom_app_id">ymo0avlj</string>
+    <string name="misc_intercom_key_test">android_sdk-c24dec1eea20225cd6fff8077f34d666dd5dacf5</string>
+    <string name="misc_intercom_app_id_test">xn56966s</string>
+
+    <!-- Help Worker -->
+    <string name="my_account_worker_help_title">Help</string>
+
+    <string name="login_error">Oops! Something went wrong. Please check your email and password</string>
+    <string name="help_no_matches">Oops! I\'m afraid we cant answer that. Please contact us here..</string>
+    <string name="help_contact_us">Still need help? Contact us here.</string>
+    <string name="contact_us_thanks">Thank you for your message.</string>
+    <string name="contact_us_thanks_message">We are constantly striving to improve The Square. Your feedback is very important to us.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Understanding First Time -->
+    <string name="understanding_first_1_header">Which subscription plan is right for me?</string>
+    <string name="understanding_first_1_text"> We offer three subscription plans. Each plan allows
+        you to promote an unlimited amount of jobs and be matched to an unlimited
+        amount of workers. But the amount of workers you can book is limited by the
+        Subscription Plan you are on. Every time you book a worker, you use one of
+        your Booking Credits.
+\n\nHow many people do you hire per month?
+\n\n1-4 hires - we recommend the BASIC Package (20 Booking Credits per user, per month)
+        \n<font size="14">£499 +VAT (normally £999 +VAT) £24.95+VAT per Credit</font>
+\n\n5-10 hires - we recommend the STANDARD Package (50 Booking Credits per user, per month)
+        \n<font size="14">£999 +VAT (normally £1999 +VAT) - £19.98+VAT per Credit</font>
+\n\n11-20 hires - we recommend the PREMIUM Package (100 Booking Credits, per user, per month)
+        \n<font size="14">£1799 +VAT (normally £3599 +VAT) £17.99+VAT per Credit</font>
+\n\n20+ hires - have your colleagues subscribe to one of the above or get in touch to
+        discuss a bespoke subscription package.
+\n\nWe make these recommendations so that you will have enough Booking Credits
+        to connect with a shortlist of workers, before you hire the right
+        workers for your business.
+\n\nIf you are going to have a particularly busy month, you are able to
+        top up your Booking Credits, 10 at a time for £299+VAT (normally £599+VAT).
+        Top Up Booking Credits are valid for one month from date of purchase.
+        Top Up Booking Credits can only be used in conjunction
+        with an existing subscription plan.
+\n\n\n<font size="14">Booking Credits are non refundable, non exchangeable
+        and time bound. Booking Credits cannot be carried over from one month to another.
+        Once you have used a Booking Credit, it cannot be refunded or exchanged even
+        if the worker cancels or you decide to cancel a worker or a job.</font></string>
+    <string name="understanding_first_2_header">What\'s a booking?</string>
+    <string name="understanding_first_2_text">Each time you book a worker, you use a Booking Credit.
+\n\nThe Square allows you to promote an unlimited amount of jobs and be matched to
+        an unlimited amount of workers. But the amount of workers you can book is
+        limited by the Subscription Plan you are on. Every time you book a worker,
+        you use one of your Booking Credits.
+\n\nThere are two ways you can book a worker:
+\n1. By offering a worker a job and they accept the offer
+\n2. The worker applies to your job and you accept their application.
+\nEither of these transactions counts as booking a worker and uses a Booking Credit.
+\n\nA booked worker gives you extra details which includes contact details.
+        The booked worker is also given your contact details and information about
+        where and when to turn up for the job.
+\n\nEvery booked worker uses a Booking Credit, even if you, or the worker, later
+        cancels the booking. If you are satisfied with the worker you have booked
+        and do not wish to book any more workers for a particular job, we suggest
+        you cancel any outstanding job offers to avoid wasting Booking Credits.
+\n\n<font size="14">Booking Credits are non refundable, non exchangeable and
+        time bound. Booking Credits cannot be carried over from one month to another.
+        Once you have used a Booking Credit, it cannot be refunded or exchanged even
+        if the worker cancels or you decide to cancel a worker or a job.</font>
+</string>
+    <string name="understanding_first_3_header">How am I billed?</string>
+    <string name="understanding_first_3_text">You are billed one month in advance to
+        cover your subscription for that month. The Square will charge you on
+        a monthly basis on the calendar day corresponding to the commencement
+        of your initial subscription. Our subscription plans are recurring payments.
+        Your subscription will automatically renew using the credit card
+        you have provided. You can cancel automatic renewal of your subscription
+        at any time by clicking \'Cancel My Subscription\' in My Price Plan
+        and you will be able to use any remaining Booking Credits until the
+        expiry date of your subscription.
+        \n\nIn some cases your payment date may change, for example if your
+        credit card has not successfully settled, if your paid membership
+        began on a day not contained in a given month, or if you
+        upgrade your account causing your renewal date to change.</string>
+    <string name="understanding_first_4_header">How do I activate my free trial?</string>
+    <string name="understanding_first_4_text">Your free trial will be activated as soon as
+        you choose your package and provide your credit card details for
+        your subscription. You will then be able to use
+        The Square for free of charge for the first month.</string>
+    <string name="understanding_first_5_header">Will I be charged during my free trial?</string>
+    <string name="understanding_first_5_text">You won\'t be charged during your free trial,
+        which begins the first time you choose your package and provide your
+        credit card details. This trial period lasts exactly one month.
+        If you do not cancel before your free trial period ends, you will
+        be automatically charged in advance for the next month of your subscription.
+        \n\nYou can cancel anytime during your free trial and before your
+        subscription renewal date.</string>
+    <string name="understanding_first_6_header">What happens after my free trial period?</string>
+    <string name="understanding_first_6_text">If you do not cancel before your
+        free trial period ends, you will be automatically charged for
+        the next month of your subscription.</string>
+    <string name="understanding_first_7_header">How do I cancel my free
+        trial or subscription?</string>
+    <string name="understanding_first_7_text">To cancel your subscription:
+            \n\n1. Go to My Price Plan
+            \n\n2. Scroll to the foot of the page
+            \n\n3. Click \'Cancel my subscription\'
+            \n\n4. You will be asked if your are sure you want to cancel
+            \n\n5. Selecting you want to cancel will mean your subscription
+        will end at midnight before the scheduled renewal date
+            \n\nOnce you have cancelled, you will still be able to use any
+        remaining Booking Credits until your subscription end date.
+            \n\n<font size="14">To the extent permitted by the applicable law,
+        payments are non-refundable and we do not provide refunds or
+        credits for any partial-month subscription periods or unused
+        Booking Credits.</font></string>
+
+    <!-- Understanding General -->
+    <string name="understanding_1_header">Which subscription plan is right for me?</string>
+    <string name="understanding_1_text"> We offer three subscription plans. Each plan allows
+        you to promote an unlimited amount of jobs and be matched to an unlimited
+        amount of workers. But the amount of workers you can book is limited by the
+        Subscription Plan you are on. Every time you book a worker, you use one of
+        your Booking Credits.
+\n\nHow many people do you hire per month?
+\n\n1-4 hires - we recommend the BASIC Package (20 Booking Credits per user, per month)
+        \n<font size="14">£499 +VAT (normally £999 +VAT) £24.95+VAT per Credit</font>
+\n\n5-10 hires - we recommend the STANDARD Package (50 Booking Credits per user, per month)
+        \n<font size="14">£999 +VAT (normally £1999 +VAT) - £19.98+VAT per Credit</font>
+\n\n11-20 hires - we recommend the PREMIUM Package (100 Booking Credits, per user, per month)
+        \n<font size="14">£1799 +VAT (normally £3599 +VAT) £17.99+VAT per Credit</font>
+\n\n20+ hires - have your colleagues subscribe to one of the above or get in touch to
+        discuss a bespoke subscription package.
+\n\nWe make these recommendations so that you will have enough Booking Credits
+        to connect with a shortlist of workers, before you hire the right
+        workers for your business.
+\n\nIf you are going to have a particularly busy month, you are able to
+        top up your Booking Credits, 10 at a time for £299+VAT (normally £599+VAT).
+        Top Up Booking Credits are valid for one month from date of purchase.
+        Top Up Booking Credits can only be used in conjunction
+        with an existing subscription plan.
+\n\n\n<font size="14">Booking Credits are non refundable, non exchangeable
+        and time bound. Booking Credits cannot be carried over from one month to another.
+        Once you have used a Booking Credit, it cannot be refunded or exchanged even
+        if the worker cancels or you decide to cancel a worker or a job.</font></string>
+    <string name="understanding_2_header">What\'s a booking?</string>
+    <string name="understanding_2_text">Each time you book a worker, you use a Booking Credit.
+\n\nThe Square allows you to promote an unlimited amount of jobs and be matched to
+        an unlimited amount of workers. But the amount of workers you can book is
+        limited by the Subscription Plan you are on. Every time you book a worker,
+        you use one of your Booking Credits.
+\n\nThere are two ways you can book a worker:
+\n1. By offering a worker a job and they accept the offer
+\n2. The worker applies to your job and you accept their application.
+\nEither of these transactions counts as booking a worker and uses a Booking Credit.
+\n\nA booked worker gives you extra details which includes contact details.
+        The booked worker is also given your contact details and information about
+        where and when to turn up for the job.
+\n\nEvery booked worker uses a Booking Credit, even if you, or the worker, later
+        cancels the booking. If you are satisfied with the worker you have booked
+        and do not wish to book any more workers for a particular job, we suggest
+        you cancel any outstanding job offers to avoid wasting Booking Credits.
+\n\n<font size="14">Booking Credits are non refundable, non exchangeable and
+        time bound. Booking Credits cannot be carried over from one month to another.
+        Once you have used a Booking Credit, it cannot be refunded or exchanged even
+        if the worker cancels or you decide to cancel a worker or a job.</font>
+</string>
+    <string name="understanding_3_header">How am I billed?</string>
+    <string name="understanding_3_text">You are billed one month in advance to
+        cover your subscription for that month. The Square will charge you on
+        a monthly basis on the calendar day corresponding to the commencement
+        of your initial subscription. Our subscription plans are recurring payments.
+        Your subscription will automatically renew using the credit card
+        you have provided. You can cancel automatic renewal of your subscription
+        at any time by clicking \'Cancel My Subscription\' in My Price Plan
+        and you will be able to use any remaining Booking Credits until the
+        expiry date of your subscription.
+        \n\nIn some cases your payment date may change, for example if your
+        credit card has not successfully settled, if your paid membership
+        began on a day not contained in a given month, or if you
+        upgrade your account causing your renewal date to change.</string>
+    <string name="understanding_4_header">What subscription plan am I on?</string>
+    <string name="understanding_4_text">The type of subscription plan you on is displayed
+        in the top right hand corner of My Price Plan screen.
+        The name of your subscription plan is displayed. i.e.
+        Basic, Standard or Premium.
+        \n\nIf you want to change your plan,
+        click Change my plan and follow instructions.</string>
+    <string name="understanding_5_header">When does my subscription renew?</string>
+    <string name="understanding_5_text">In the top left hand side of
+        My Price Plan, the renewal date of your subscription plan is
+        displayed underneath MY SUBSCRIPTION PLAN.</string>
+    <string name="understanding_6_header">How many Booking Credits do I have left
+                    and when do they expire?</string>
+    <string name="understanding_6_text">My Price Plan displays all of your
+        Booking Credit details.
+        \n\nHere you can see how many Booking Credits you have used that month,
+        how many you have remaining and when they expire.</string>
+    <string name="understanding_7_header">What is the difference between
+        subscription &amp; top up Booking Credits?</string>
+    <string name="understanding_7_text">Subscription credits are linked to the
+        subscription package you are on.
+        \n\nEach of the three subscription plans give you up to either 20,
+        50 or 100 Booking Credits per month. These Booking Credits can only
+        be used within your billing month.
+        \n\nIf you are going to have a particularly busy month you can top up
+        your Booking Credits, 10 at a time. Top Up Booking
+        Credits are valid for 30 days from date of purchase.
+        \n\nMy Price Plan separates your Booking Credits so that you
+        can see exactly when they expire.</string>
+    <string name="understanding_8_header">What is a Top Up and how do I Top Up?</string>
+    <string name="understanding_8_text">If you are going to have a particularly busy
+        month you, are able to top up your Booking Credits,
+        10 at a time for £299+VAT (normally £599+VAT).
+        \n\nTo Top Up your Booking Credits:
+        \n\n1. Click: Need a top up? on My Price Plan screen
+        \n2. Follow the instructions on screen and click Top up now
+        \n3. You will be prompted to enter your password to confirm your purchase
+        \n4. Your credit card will billed for the top up
+        \n5. You will be redirected back to My Price Plan where you
+        will see your new Top Up Booking Credits and their expiry date.
+        \n\nTop Up Booking Credits are valid for 30 days from date of purchase.
+        Top Up Booking Credits can only be used in conjunction with an
+        existing subscription plan.
+        \n\nTIP: If you\'re going to use all your Booking Credits
+        each month you should consider upgrading your account.
+        It is cheaper in the long run!
+        \n\n<font size="14">Booking Credits are non refundable,
+        non exchangeable and time bound. Booking Credits cannot
+        be carried over from one month to another. Once you have used a
+        Booking Credit, it cannot be refunded or exchanged even if the worker
+        cancels or you decide to cancel a worker or a job.</font></string>
+    <string name="understanding_9_header">How do I change my subscription plan?</string>
+    <string name="understanding_9_text">We recognise your circumstances may change.
+        You can change your subscription plan at any time by:
+        \n\n1. Click > Change my plan on My Price Plan screen
+        \n\n2. Choose your new plan and click \'continue\'
+        \n\n3. You will be prompted to enter your password to confirm your change
+        \n\n4. Your credit card will be billed with the new subscription plan charge
+        \n\n5. You will be redirected back to My Price Plan where you
+        will see your account has been changed
+        \n\n6. You will see your remaining or new Booking Credits and their expiry date.
+        \n\nYour subscription plan renewal date will change to the calendar
+        day corresponding to the commencement of your plan change.</string>
+    <string name="understanding_10_header">What happens to my existing booking
+        credits if I top up or change subscription plan?</string>
+    <string name="understanding_10_text">If you top up, upgrade or downgrade
+        your account, you will be able to use any remaining Booking
+        Credits until their original expiry date.
+        \nAnd your new Booking Credits will be added to your subscription
+        Booking Credits or Top Up Booking Credits retrospectively.
+        \n\nYou will be able to see any changes to your Booking Credits in My Price Plan.
+        \n\n<font size="14">Booking Credits are non refundable,
+        non exchangeable and time bound. Booking Credits cannot be
+        carried over from one month to another. Once you have used a
+        Booking Credit, it cannot be refunded or exchanged even if the worker
+        cancels or you decide to cancel a worker or a job.</font></string>
+    <string name="understanding_11_header">What if I can\'t pay by credit card?</string>
+    <string name="understanding_11_text">Normally, you are required to provide
+        a valid credit card when purchasing your subscription plan. But we understand
+        for larger businesses and/or companies wishing to purchase more
+        than one subscription for different users, there could be an easier way,
+        so we also offer an invoicing service.
+        \n\nTo activate an invoice service:
+        \n\n1. Scroll to the bottom of My Price Plan screen and select:
+        Can\'t pay by credit card?
+        \n2. Complete the instructions on the screen and click \'Confirm\'
+        \n3. We will issue a VAT invoice by email
+        \n4. The invoice will need to be paid via BACS before your account can be activated
+        \n5. As soon as full payment is received your account will be
+        activated and you will be notified by email
+        \n\nNote: The invoice service requires a minimum of 6 months subscriptions.
+        \n\nAny queries, please get in touch on 0203 868 6303 or
+        email accounts@thesquareapp.com</string>
+    <string name="understanding_12_header">Will I be charged during my free trial?</string>
+    <string name="understanding_12_text">You won\'t be charged during your free trial,
+        which begins the first time you choose your package and provide your
+        credit card details. This trial period lasts exactly one month.
+        If you do not cancel before your free trial period ends, you will
+        be automatically charged in advance for the next month of your subscription.
+        \n\nYou can cancel anytime during your free trial and before your
+        subscription renewal date.</string>
+    <string name="understanding_13_header">What happens after my free trial period?</string>
+    <string name="understanding_13_text">If you do not cancel before your
+        free trial period ends, you will be automatically charged for
+        the next month of your subscription.</string>
+    <string name="understanding_14_header">How do I cancel my free
+        trial or subscription?</string>
+    <string name="understanding_14_text">To cancel your subscription:
+            \n\n1. Go to My Price Plan
+            \n\n2. Scroll to the foot of the page
+            \n\n3. Click \'Cancel my subscription\'
+            \n\n4. You will be asked if your are sure you want to cancel
+            \n\n5. Selecting you want to cancel will mean your subscription
+        will end at midnight before the scheduled renewal date
+            \n\nOnce you have cancelled, you will still be able to use any
+        remaining Booking Credits until your subscription end date.
+            \n\n<font size="14">To the extent permitted by the applicable law,
+        payments are non-refundable and we do not provide refunds or
+        credits for any partial-month subscription periods or unused
+        Booking Credits.</font></string>
+
+    <!-- New feature Connect -->
+    <string name="connect_header">Do you want to interview/connect with
+                matched workers or do you just want to book?</string>
+    <string name="connect_connect_yes">I want to speak with them before hiring</string>
+    <string name="connect_connect_no">I want to book them to turn up and start</string>
+    <string name="connect_contact_header">All marked information will only be
+        provided to workers who you connect with. If this is left blank,
+        your name and contact details will be provided.</string>
+    <string name="connect_application_deadline">Application deadline</string>
+    <string name="connect_contact">Contact</string>
+    <string name="connect_email">Email address</string>
+    <string name="connect_number">Contact number</string>
+    <string name="connect_person">Contact person</string>
+    <string name="employer_jobs_app_deadline">Application \ndeadline \n%s</string>
+    <string name="connect_connected">Connected</string>
+    <string name="connect_prompt_book">Are you sure you\'d
+                    like to offer this job to %s ?</string>
+    <string name="connect_prompt_connect">Are you sure you\'d like
+                    to connect with %s ?</string>
+    <string name="connect_confirm">Thanks! \n\nWe\'ll let you know when %s connects.</string>
+    <string name="connect_hint_sent">You\'ve offered to connect.
+        \n\nWe\'ll let you know when %s connects.</string>
+    <string name="connect_worker_connected">Cool! %s is now a connection.</string>
+    <string name="connect_worker_connected_more">Get in touch with %s to
+                                confirm next steps.</string>
+
+    <!-- New feature Suggest Role -->
+    <string name="suggest_role">Role not listed?</string>
+    <string name="suggest_qual">Qualification not listed?</string>
+    <string name="suggest_skill">Skill not listed?</string>
+    <string name="suggest_experience">Experience  not listed?</string>
+    <string name="suggest_role_title">Please suggest a role which is not listed</string>
+    <string name="suggest_qual_title">Please suggest a qualification which is not listed</string>
+    <string name="suggest_skill_title">Please suggest a skill which is not listed</string>
+    <string name="suggest_experience_title">Please suggest a experience which is not listed</string>
+    <string name="suggest_role_thanks">Thanks for suggesting this new role. We\'ll be adding it to the list very soon...</string>
+    <string name="suggest_qual_thanks">Thanks for suggesting this new qualification. We\'ll be adding it to the list very soon...</string>
+    <string name="suggest_skill_thanks">Thanks for suggesting this new skill. We\'ll be adding it to the list very soon...</string>
+    <string name="suggest_experience_thanks">Thanks for suggesting this new experience. We\'ll be adding it to the list very soon...</string>
+
+
+</resources>

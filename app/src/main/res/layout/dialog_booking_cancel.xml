@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:text="@string/employer_dialog_booking_title"
+        android:textSize="20sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/blackSquareColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:josefin_style="italic"/>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="@string/employer_dialog_booking_cancel"
+            android:textColor="@color/redSquareColor"
+            android:layout_margin="14dp"
+            android:id="@+id/dialog_booking_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="@string/employer_dialog_booking_keep"
+            android:textColor="@color/redSquareColor"
+            android:layout_margin="14dp"
+            android:id="@+id/dialog_booking_keep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

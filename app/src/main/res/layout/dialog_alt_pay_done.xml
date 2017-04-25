@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/ic_clear_black_24dp"
+            android:id="@+id/pay_alt_close"
+            android:layout_margin="12dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_below="@+id/pay_alt_close"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:id="@+id/pay_alt_title"
+            android:textColor="@color/redSquareColor"
+            app:josefin_style="italic"
+            android:text="@string/payments_alt_popup_title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:text="@string/payments_alt_popup_text"
+            android:textColor="@color/blackSquareColor"
+            android:layout_margin="24dp"
+            android:textSize="18sp"
+            app:josefin_style="light"
+            android:id="@+id/pay_alt_text"
+            android:layout_below="@+id/pay_alt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_below="@+id/pay_alt_text"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/redSquareColor"
+            app:josefin_style="italic"
+            android:layout_marginBottom="24dp"
+            android:text="@string/payments_alt_popup_subtitle"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

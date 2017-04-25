@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/dialog_contract_exit"
+        android:layout_gravity="start|top"
+        android:layout_margin="22dp"
+        android:background="@drawable/ic_close"
+        android:layout_width="22dp"
+        android:layout_height="22dp"/>
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:textColor="@color/blackSquareColor"
+        android:textSize="18sp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/employer_dialog_contract_ended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="34dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:textColor="@color/blackSquareColor"
+            android:textSize="18sp"
+            android:text="@string/employer_dialog_contract_ended_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/dialog_contract_name"
+            android:textColor="@color/redSquareColor"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

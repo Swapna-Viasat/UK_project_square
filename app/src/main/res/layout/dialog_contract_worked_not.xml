@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:text="@string/employer_dialog_contract_end"
+        android:textSize="18sp"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="160dp"
+        android:layout_gravity="start|left"
+        android:textColor="@color/blackSquareColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/dialog_contract_worked_not_check"
+        android:gravity="right"
+        android:button="@null"
+        android:text="@string/employer_dialog_contract_show"
+        android:textSize="18sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="24dp"
+        android:drawableTint="@color/redSquareColor"
+        android:drawableRight="@drawable/rb_workers_dialog"
+        android:drawablePadding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:text="@string/employer_dialog_contract_comments"
+        android:textSize="12sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="14dp"
+        android:textColor="@color/blackSquareColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <construction.thesquare.shared.view.widget.JosefinSansEditText
+        android:id="@+id/dialog_comments_edit"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:lines="5"
+        android:minLines="1"
+        android:maxLines="5"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="@string/employer_dialog_contract_cancel"
+            android:textColor="@color/redSquareColor"
+            android:layout_margin="14dp"
+            android:id="@+id/dialog_contract_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="@string/employer_dialog_contract_end_confirm"
+            android:textColor="@color/redSquareColor"
+            android:layout_margin="14dp"
+            android:id="@+id/dialog_contract_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

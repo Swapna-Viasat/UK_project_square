@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/worker_reviews_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/reviews_no_data"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:text="@string/employer_review_request"
+            app:josefin_style="light"
+                android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/blackSquareColor"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/employer_review_request_detail"
+                app:josefin_style="light"
+                android:lineSpacingExtra="10dp"
+                android:layout_margin="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/blackSquareColor"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/aggregate_worker_review"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- GlobalRating -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_gravity="center"
+                android:text="My Company Star Rating"
+                android:textAllCaps="true"
+                android:textColor="@color/redSquareColor"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/global"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="120dp"
+                    >
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/review_details_companies_reviews_value"
+                        android:textColor="@color/redSquareColor"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:textSize="14dp"
+                        android:text="company reviews"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="12dp"
+                    android:background="#ededed"
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"/>
+                <!--  <LinearLayout
+                      android:layout_width="60dp"
+                      android:orientation="vertical"
+                      android:layout_marginRight="15dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginLeft="35dp"
+                      android:layout_height="120dp"
+                      >
+                      <construction.thesquare.shared.view.widget.JosefinSansTextView
+                          android:id="@+id/review_details_turned_up_value"
+                          android:layout_marginTop="20dp"
+                          android:textAlignment="center"
+                          android:layout_gravity="center"
+                          android:textColor="@color/redSquareColor"
+                          android:textSize="20dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+                      <construction.thesquare.shared.view.widget.JosefinSansTextView
+                          android:id="@+id/review_details_turned_up"
+                          android:text="@string/worker_reviews_turned_up"
+                          android:textAlignment="center"
+                          android:layout_gravity="center"
+                          android:textSize="14dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+                  </LinearLayout>
+                  <View
+                      android:layout_marginTop="12dp"
+                      android:background="#ededed"
+                      android:layout_width="1dp"
+                      android:layout_height="100dp"/>-->
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="120dp"
+                    >
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/review_details_companies_turned_up_value"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/redSquareColor"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/review_details_companies_turned_up"
+                        android:textSize="14dp"
+                        android:text="@string/employer_reviews_workers_turned_up"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--environment-->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field1"
+                android:layout_gravity="center"
+                android:text="@string/employer_reviews_environment"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_quality"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- team -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field2"
+                android:layout_gravity="center"
+                android:text="@string/employer_reviews_team"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_reliability"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- Pay -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field3"
+                android:layout_gravity="center"
+                android:text="@string/employer_reviews_pay"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_attitude"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- induction -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field4"
+                android:layout_gravity="center"
+                android:text="@string/employer_reviews_induction"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_safety"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

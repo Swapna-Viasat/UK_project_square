@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cscs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/worker_cscs_card"
+            android:textColor="@color/blackSquareColor" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cscs_status"
+            style="@style/TextRedGraftrsBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/worker_cscs_not_verified"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cscsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_margin="14dp">
+
+        <ImageView
+            android:id="@+id/workerImage"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cscsCardRegLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/worker_cscs_reg_number"
+            android:textColor="@color/blackSquareColor"
+            app:josefin_style="italic" />
+
+        <LinearLayout
+            android:id="@+id/cscsNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cscsCardRegLabel"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/workerImage"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/cscs1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="1"
+                    android:textColor="@color/blackSquareColor"
+                    app:josefin_style="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/cscs1"
+                    android:background="@color/redSquareColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/cscs2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="1"
+                    android:textColor="@color/blackSquareColor"
+                    app:josefin_style="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/cscs2"
+                    android:background="@color/redSquareColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/cscs3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="1"
+                    android:textColor="@color/blackSquareColor"
+                    app:josefin_style="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/cscs3"
+                    android:background="@color/redSquareColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/cscs4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="1"
+                    android:textColor="@color/blackSquareColor"
+                    app:josefin_style="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/cscs4"
+                    android:background="@color/redSquareColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/cscs5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="1"
+                    android:textColor="@color/blackSquareColor"
+                    app:josefin_style="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/cscs5"
+                    android:background="@color/redSquareColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/cscs6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="1"
+                    android:textColor="@color/blackSquareColor"
+                    app:josefin_style="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/cscs6"
+                    android:background="@color/redSquareColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/cscs7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="1"
+                    android:textColor="@color/blackSquareColor"
+                    app:josefin_style="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/cscs7"
+                    android:background="@color/redSquareColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/cscs8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="1"
+                    android:textColor="@color/blackSquareColor"
+                    app:josefin_style="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/cscs8"
+                    android:background="@color/redSquareColor" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cscs_expires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cscsNumberLayout"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/worker_cscs_expires_ends"
+            android:textColor="@color/blackSquareColor"
+            app:josefin_style="semiBold" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cscs_expires_value"
+            style="@style/TextRedGraftrsBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cscs_expires"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/recordCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cscs_expires_value"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/worker_cscs_record_category"
+            android:textColor="@color/blackSquareColor"
+            app:josefin_style="semiBold" />
+
+        <LinearLayout
+            android:id="@+id/cscsRecordsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recordCategory"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+</RelativeLayout>

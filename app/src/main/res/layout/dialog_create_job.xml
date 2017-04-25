@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:text="@string/employer_jobs_new"
+        android:textSize="20sp"
+        android:textColor="@color/blackSquareColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Create new job -->
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_centerVertical="true"
+            android:text="@string/employer_jobs_create"
+            android:id="@+id/new_text"
+            android:maxLines="1"
+            android:textColor="@color/redSquareColor"
+            android:textSize="16sp"
+            app:josefin_style="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/new_check"
+            android:checked="true"
+            android:layout_toRightOf="@+id/new_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:drawableTint="@color/redSquareColor"
+            android:drawableRight="@drawable/radio_button_work_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!-- Duplicate job -->
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_centerVertical="true"
+            android:id="@+id/duplicate_text"
+            android:maxLines="1"
+            android:textSize="16sp"
+            app:josefin_style="italic"
+            android:text="@string/employer_jobs_duplicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:button="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/duplicate_check"
+            android:layout_toRightOf="@+id/duplicate_text"
+            android:drawableTint="@color/redSquareColor"
+            android:drawableRight="@drawable/radio_button_work_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!-- Select job to duplicate spinner -->
+    <Spinner
+        android:layout_marginTop="24dp"
+        android:id="@+id/spinner"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Action -->
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_gravity="end|right"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/redSquareColor"
+            android:textSize="16sp"
+            android:text="@string/employer_jobs_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/ok"
+            android:textAllCaps="true"
+            android:textColor="@color/redSquareColor"
+            android:textSize="16sp"
+            android:layout_marginLeft="24dp"
+            android:text="@string/employer_jobs_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

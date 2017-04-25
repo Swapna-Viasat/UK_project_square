@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<construction.thesquare.shared.view.widget.JosefinSansTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recordText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/recordCategory"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:textColor="@color/graySquareColor"
+    app:josefin_style="italic" />

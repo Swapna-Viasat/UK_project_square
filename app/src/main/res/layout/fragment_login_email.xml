@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Welcome back!"
+        android:textSize="28sp" />
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="(Please enter your email and password)"
+        android:textSize="20sp"
+        app:josefin_style="light" />
+
+    <!-- Extracted the login form for easier automated testing -->
+    <construction.thesquare.shared.login.view.LoginForm
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Forgotten your password?"
+            android:textSize="14sp"
+            app:josefin_style="light" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/forgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here!"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/redSquareColor"
+            app:josefin_style="light" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:textSize="14sp"
+            app:josefin_style="light" />
+    </LinearLayout>
+
+</LinearLayout>

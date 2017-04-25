@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_job_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/close"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_clear_black_24dp"
+                android:tint="@color/redSquareColor"
+                android:background="@color/whiteSquareColor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_gravity="center"
+                android:text="@string/worker_request_review"
+                android:textSize="22sp"
+                app:josefin_style="light"
+                android:textColor="@color/blackSquareColor"
+                android:layout_marginBottom="12dp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.CardView
+                card_view:elevation="2dp"
+                card_view:cardCornerRadius="1dp"
+                android:layout_margin="4dp"
+                card_view:cardBackgroundColor="@color/lightgraySquareColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="6dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/worker_request_review_first_name"
+                        app:josefin_style="italic"
+                        android:layout_marginTop="18dp"
+                        style="@style/body_dark_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/get_first"
+                        style="@style/square_edit_text"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/worker_request_review_last_name"
+                        app:josefin_style="italic"
+                        style="@style/body_dark_text"
+                        android:layout_marginTop="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/get_last"
+                        style="@style/square_edit_text"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/worker_request_email"
+                        app:josefin_style="italic"
+                        android:layout_marginTop="18dp"
+                        style="@style/body_dark_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:inputType="textEmailAddress"
+                        style="@style/square_edit_text"
+                        android:id="@+id/get_email"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/worker_request_mobile"
+                        app:josefin_style="italic"
+                        style="@style/body_dark_text"
+                        android:layout_marginTop="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        style="@style/square_edit_text"
+                        android:inputType="phone"
+                        android:id="@+id/get_mobile"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/worker_request_company"
+                        app:josefin_style="italic"
+                        style="@style/body_dark_text"
+                        android:layout_marginTop="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        style="@style/square_edit_text"
+                        android:id="@+id/get_company"
+                        android:layout_height="wrap_content"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/worker_request_error"
+                        android:id="@+id/err"
+                        android:visibility="gone"
+                        style="@style/body_dark_text"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@color/redSquareColor"
+                        app:josefin_style="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:background="@color/redSquareColor"
+                    android:elevation="4dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:text="CANCEL"
+                    android:padding="12dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/request"
+                    android:layout_margin="4dp"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:text="REQUEST"
+                    android:padding="12dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

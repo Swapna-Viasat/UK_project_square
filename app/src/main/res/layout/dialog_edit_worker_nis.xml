@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/blackSquareColor"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:josefin_style="bold" />
+
+    <!---NIN number -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/nin_worker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:id="@+id/nin_worker_onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#ededed"
+            android:orientation="vertical">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/onboarding_nin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="12dp"
+                android:text="National Insurance Number"
+                android:textColor="@color/blackSquareColor"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ededed"
+                android:orientation="horizontal">
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/nis_01"
+                    style="@style/square_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:textSize="20sp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/nis_02"
+                    style="@style/square_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:textSize="20sp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/nis_03"
+                    style="@style/square_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="20sp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/nis_04"
+                    style="@style/square_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="20sp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/nis_05"
+                    style="@style/square_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="20sp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/nis_06"
+                    style="@style/square_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="20sp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/nis_07"
+                    style="@style/square_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="20sp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/nis_08"
+                    style="@style/square_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="20sp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/nis_09"
+                    style="@style/square_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_cancel"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/onboarding_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/redSquareColor"
+            android:textSize="18sp"
+            app:josefin_style="bold" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/done"
+            style="@style/BaseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="@string/employer_rate_submit"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:josefin_style="bold" />
+    </LinearLayout>
+</LinearLayout>

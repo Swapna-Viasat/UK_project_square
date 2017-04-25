@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "780965245017",
+    "firebase_url": "https://the-square-alpha.firebaseio.com",
+    "project_id": "the-square-alpha",
+    "storage_bucket": "the-square-alpha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780965245017:android:8c7909433ccfb58d",
+        "android_client_info": {
+          "package_name": "construction.thesquare.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780965245017-nheufvl0g8olklq3b1hkrk7hn1eb8bt0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqw2xz_UzJv6fvt2Vwnx3_pV4OEVt5n_Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

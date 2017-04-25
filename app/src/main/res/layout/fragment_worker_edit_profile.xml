@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/content_worker_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/redSquareColor"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/worker_view_profile_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bob"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/worker_view_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    app:josefin_style="light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/worker_view_profile_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:paddingTop="6dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blackSquareColor"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        app:josefin_style="italic"
+                        tools:text="ADMINISTRATOR" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/worker_view_profile_experience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="6dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blackSquareColor"
+                        android:textSize="18sp"
+                        app:josefin_style="italic"
+                        tools:text="/ 15 YEARS EXPERIENCE" />
+                </LinearLayout>
+
+                <construction.thesquare.shared.view.widget.RatingView
+                    android:id="@+id/worker_view_profile_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    app:editable="no" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <include layout="@layout/include_worker_profile_details" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" />
+    </LinearLayout>
+</ScrollView>

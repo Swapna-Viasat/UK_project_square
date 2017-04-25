@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/content_worker_details_extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_worker_profile"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkSquareColor">
+
+            <ImageView
+                android:id="@+id/worker_profile_email_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_contacts_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/worker_contact_info"
+                android:textColor="@color/whiteSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_email"
+                style="@style/caption_gray_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_contacts_title"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp"
+                android:textColor="@color/whiteSquareColor"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_phone"
+                style="@style/caption_gray_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_email"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="14dp"
+                android:paddingLeft="14dp"
+                android:textColor="@color/whiteSquareColor"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/worker_profile_bio_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_bio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/employer_worker_details_bio"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_bio_text"
+                style="@style/caption_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_bio_title"
+                android:layout_marginTop="8dp"
+                android:hint="@string/employer_worker_details_bio_placeholder"
+                android:paddingBottom="14dp"
+                android:paddingLeft="14dp"
+                android:textColorHint="@color/blackSquareColor"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/worker_profile_nationality_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_nationality_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/onboarding_nationality"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_nationality_value"
+                style="@style/caption_dark_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/worker_profile_languages_title"
+                android:paddingTop="14dp"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_english_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_nationality_title"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp"
+                android:text="@string/worker_english_level"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_english_value"
+                style="@style/caption_dark_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/worker_profile_nationality_title"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/worker_profile_languages_title"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_languages_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_english_title"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp"
+                android:text="@string/onboarding_languagesspoken"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_languages_value"
+                style="@style/caption_dark_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/worker_profile_english_title"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/worker_profile_languages_title"
+                android:paddingBottom="14dp"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/worker_profile_birthday_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_birthday_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_birthday_value"
+                style="@style/caption_dark_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/worker_profile_birthday_title"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:id="@+id/worker_profile_nis_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_nis_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/national_insurance_number"
+                android:textColor="@color/blackSquareColor" />
+
+            <LinearLayout
+                android:id="@+id/nisNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_nis_title"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingLeft="14dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/nis1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="1"
+                        android:textColor="@color/blackSquareColor"
+                        app:josefin_style="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/nis1"
+                        android:background="@color/redSquareColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/nis2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="1"
+                        android:textColor="@color/blackSquareColor"
+                        app:josefin_style="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/nis2"
+                        android:background="@color/redSquareColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/nis3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="1"
+                        android:textColor="@color/blackSquareColor"
+                        app:josefin_style="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/nis3"
+                        android:background="@color/redSquareColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/nis4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="1"
+                        android:textColor="@color/blackSquareColor"
+                        app:josefin_style="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/nis4"
+                        android:background="@color/redSquareColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/nis5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="1"
+                        android:textColor="@color/blackSquareColor"
+                        app:josefin_style="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/nis5"
+                        android:background="@color/redSquareColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/nis6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="1"
+                        android:textColor="@color/blackSquareColor"
+                        app:josefin_style="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/nis6"
+                        android:background="@color/redSquareColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/nis7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="1"
+                        android:textColor="@color/blackSquareColor"
+                        app:josefin_style="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/nis7"
+                        android:background="@color/redSquareColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/nis8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="1"
+                        android:textColor="@color/blackSquareColor"
+                        app:josefin_style="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/nis8"
+                        android:background="@color/redSquareColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/nis9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="1"
+                        android:textColor="@color/blackSquareColor"
+                        app:josefin_style="italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/nis9"
+                        android:background="@color/redSquareColor" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:id="@+id/worker_profile_passport_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_passport_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/worker_passport_photo"
+                android:textColor="@color/blackSquareColor" />
+
+            <ImageView
+                android:id="@+id/worker_profile_passport_value"
+                style="@style/caption_black_text"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/worker_profile_passport_title"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:id="@+id/worker_profile_experience_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_experience_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/employer_worker_details_qualifications"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_details_bullet_list_experience"
+                style="@style/caption_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_experience_title"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <include layout="@layout/cscs_worker" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:id="@+id/worker_profile_requirements_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_requirements_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="Practical info"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_details_bullet_list_requirements"
+                style="@style/caption_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_requirements_title"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:id="@+id/worker_profile_skills_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_skills_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/employer_worker_details_skills"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_details_bullet_list_skills"
+                style="@style/caption_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_skills_title"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:id="@+id/worker_profile_experience_type_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_experience_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/worker_experience_types"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_details_bullet_list_experience_type"
+                style="@style/caption_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_experience_type_title"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:id="@+id/worker_profile_companies_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14sp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_companies_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/employer_worker_details_companies"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_details_bullet_list_companies"
+                style="@style/caption_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_companies_title"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:id="@+id/worker_profile_location_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tint="@color/redSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_profile_location_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/employer_worker_details_location"
+                android:textColor="@color/blackSquareColor" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_details_preferred_commute_time"
+                style="@style/caption_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_profile_location_title"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="14dp"
+                android:textSize="14sp"
+                app:josefin_style="italic" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_details_preferred_location"
+                style="@style/caption_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_details_preferred_commute_time"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:josefin_style="italic" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

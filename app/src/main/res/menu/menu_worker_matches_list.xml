@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/worker_matches_menu_tune"
+        app:showAsAction="always"
+        android:id="@+id/worker_tune"
+        android:icon="@drawable/ic_worker_tune" />
+    <item
+        android:title="@string/worker_matches_menu_map"
+        android:id="@+id/worker_map"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_worker_map" />
+</menu>

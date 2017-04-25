@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteSquareColor"
+    android:weightSum="5" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.9">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerWorkerTutorial"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="1.2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.4">
+
+            <ImageView
+                android:id="@+id/ivTutorialWorker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/rounded_filled_circle" />
+
+            <ImageView
+                android:id="@+id/ivTutorialWorker2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/rounded_bordered_circle" />
+
+            <ImageView
+                android:id="@+id/ivTutorialWorker3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/rounded_bordered_circle" />
+
+            <ImageView
+                android:id="@+id/ivTutorialWorker4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/rounded_bordered_circle" />
+
+            <!--<ImageView
+                android:id="@+id/ivTutorialWorker5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/rounded_bordered_circle" />-->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStartWorker"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/get_started"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.6"
+            style="@style/BaseButton"/>
+    </LinearLayout>
+</LinearLayout>

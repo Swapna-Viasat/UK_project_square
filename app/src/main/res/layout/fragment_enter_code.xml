@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/light_big_dark_text"
+                app:josefin_style="light"
+                android:paddingBottom="20dp"
+                android:text="@string/phone_verification_thanks" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="10dp"
+                style="@style/body_dark_text"
+                android:padding="10dp" />
+
+            <!-- Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/eVerificationCode1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    style="@style/square_edit_text"
+                    android:textSize="24sp"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"/>
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/eVerificationCode2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    style="@style/square_edit_text"
+                    android:textSize="24sp"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"/>
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/eVerificationCode3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    style="@style/square_edit_text"
+                    android:textSize="24sp"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"/>
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/eVerificationCode4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    style="@style/square_edit_text"
+                    android:textSize="24sp"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_gravity="center">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/resend_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                style="@style/body_dark_text"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textIsSelectable="false"
+                android:text="@string/phone_verification_did_not_receive_sms" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/edit_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                style="@style/body_dark_text"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textIsSelectable="false"
+                android:text="@string/phone_verification_number_not_right" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_verification_continue"
+            style="@style/BaseButton"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnPhoneVerificationContinue"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</FrameLayout>

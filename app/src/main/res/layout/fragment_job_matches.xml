@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/worker_matches_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            style="@style/subheader_white_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkSquareColor"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/main_worker_advice" />
+
+        <View
+            android:id="@+id/worker_matches_exit_hint"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right|top"
+            android:layout_margin="16sp"
+            android:background="@drawable/ic_circle_close" />
+    </FrameLayout>
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:id="@+id/job_matches_counter"
+        style="@style/subheader_white_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/redSquareColor"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/job_matches_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/no_matches"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/worker_no_matches"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:josefin_style="light" />
+
+        <Button
+            android:id="@+id/editProfile"
+            style="@style/BaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/worker_update_profile" />
+    </LinearLayout>
+</LinearLayout>

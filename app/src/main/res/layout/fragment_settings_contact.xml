@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="22dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_marginLeft="-5dp"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:text="Tell us more..."
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            app:josefin_style="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <construction.thesquare.shared.view.widget.JosefinSansEditText
+            android:id="@+id/messageInput"
+            android:hint="@string/employer_settings_message"
+            android:textColorHint="@color/graySquareColor"
+            android:layout_marginTop="16dp"
+            android:inputType="text|textNoSuggestions|textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:text="@string/employer_settings_add"
+            android:layout_marginTop="28dp"
+            android:textSize="18sp"
+            app:josefin_style="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:text="@string/employer_settings_optional"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            app:josefin_style="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <FrameLayout
+                android:id="@+id/img1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/no_image"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/img2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/no_image"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/img3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_gravity="center"
+                    android:src="@drawable/no_image"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:id="@+id/send"
+        android:text="@string/employer_settings_send"
+        android:padding="18dp"
+        android:layout_margin="12dp"
+        android:textAllCaps="true"
+        android:layout_gravity="bottom"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        app:josefin_style="semiBold"
+        android:background="@color/redSquareColor"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

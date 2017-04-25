@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/blackSquareColor"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:josefin_style="bold" />
+
+    <!--Date of birth -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/workerdob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgraySquareColor"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/blackSquareColor"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:dropDownWidth="65dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/spinner_day"
+                    android:gravity="center" />
+
+                <Spinner
+                    android:id="@+id/spinner_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:dropDownWidth="65dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_cancel"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/onboarding_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/redSquareColor"
+            android:textSize="18sp"
+            app:josefin_style="bold" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/done"
+            style="@style/BaseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="@string/employer_rate_submit"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:josefin_style="bold" />
+    </LinearLayout>
+</LinearLayout>

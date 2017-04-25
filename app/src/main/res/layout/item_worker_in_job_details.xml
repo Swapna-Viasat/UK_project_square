@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="6dp"
+    card_view:cardBackgroundColor="#f8f8ff"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <!-- Avatar -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/worker_avatar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bob"
+            android:tint="@android:color/darker_gray" />
+
+        <!-- Name, Occupation, Rating -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matt R"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/worker_occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Banksman"
+                android:textAllCaps="true"
+                android:textColor="@color/redSquareColor"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <construction.thesquare.shared.view.widget.RatingView
+                    android:id="@+id/worker_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    app:editable="no" />
+
+                <ImageView
+                    android:id="@+id/likeImage"
+                    android:padding="5dp"
+                    android:tint="@color/redSquareColor"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Action Btn -->
+    <TextView
+        android:id="@+id/worker_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp"
+        android:text="offer job"
+        android:textAllCaps="true"
+        android:textColor="@color/redSquareColor"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Label -->
+    <ImageView
+        android:id="@+id/worker_label"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top|right"
+        android:background="@drawable/workers_booked"
+        android:visibility="gone" />
+
+    <!-- Available immediately -->
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:id="@+id/worker_additional_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Available Immediately"
+        android:textSize="10sp" />
+</android.support.v7.widget.CardView>

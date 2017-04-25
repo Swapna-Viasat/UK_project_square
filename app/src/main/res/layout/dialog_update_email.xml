@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/blackSquareColor"
+        android:textSize="18sp"
+        app:josefin_style="bold" />
+
+    <EditText
+        android:id="@+id/update_email_input"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_cancel"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/redSquareColor"
+            android:textSize="18sp"
+            app:josefin_style="bold" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/done"
+            style="@style/BaseButton"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Done"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:josefin_style="bold" />
+    </LinearLayout>
+</LinearLayout>

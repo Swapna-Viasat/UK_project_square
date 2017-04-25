@@ -1,0 +1,364 @@
+<ScrollView
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="construction.thesquare.employer.payments.fragment.SubscriptionFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Main Content -->
+        <LinearLayout
+            android:id="@+id/top"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/payments_sale"
+                android:textColor="@color/blackSquareColor"
+                app:josefin_style="italic"
+                android:layout_margin="12dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/first_time_user_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/payments_choose"
+                android:textColor="@color/redSquareColor"
+                android:layout_margin="12dp"
+                android:textSize="18sp"
+                app:josefin_style="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Selection Blocks -->
+            <LinearLayout
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:padding="12dp"
+                        android:id="@+id/top_basic"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:textSize="16sp"
+                            app:josefin_style="light"
+                            android:id="@+id/aa"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/redSquareColor"
+                            android:text="@string/payments_basic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:text="£499"
+                            app:josefin_style="light"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/bb"
+                            android:layout_below="@+id/aa"
+                            android:textSize="18sp"
+                            android:textColor="@color/redSquareColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:text="@string/payments_vat"
+                            android:textSize="6sp"
+                            android:layout_centerInParent="true"
+                            android:layout_above="@+id/cc"
+                            android:layout_toRightOf="@+id/bb"
+                            app:josefin_style="light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:textColor="@color/redSquareColor"
+                            android:text="20 \nBookings"
+                            android:textSize="16sp"
+                            android:id="@+id/cc"
+                            android:layout_below="@+id/bb"
+                            android:layout_centerHorizontal="true"
+                            app:josefin_style="light"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:textColor="@color/redSquareColor"
+                            android:textSize="10sp"
+                            android:layout_below="@+id/cc"
+                            android:layout_centerHorizontal="true"
+                            app:josefin_style="light"
+                            android:text="@string/payments_period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/top_standard"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:id="@+id/recommend"
+                            android:layout_marginTop="12dp"
+                            android:text="@string/payments_recommended"
+                            android:textSize="16sp"
+                            app:josefin_style="light"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/redSquareColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_below="@+id/recommend"
+                            android:id="@+id/div"
+                            android:background="@color/whiteSquareColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:textSize="16sp"
+                            app:josefin_style="light"
+                            android:layout_below="@+id/div"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/aaa"
+                            android:textColor="@color/redSquareColor"
+                            android:text="@string/payments_standard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:text="£999"
+                            app:josefin_style="light"
+                            android:textSize="18sp"
+                            android:id="@+id/bbb"
+                            android:layout_below="@+id/aaa"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/redSquareColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:text="@string/payments_vat"
+                            android:textSize="6sp"
+                            app:josefin_style="light"
+                            android:layout_toRightOf="@+id/bbb"
+                            android:layout_centerInParent="true"
+                            android:layout_above="@+id/ccc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:textColor="@color/redSquareColor"
+                            android:text="50 \nBookings"
+                            android:textSize="16sp"
+                            android:id="@+id/ccc"
+                            android:layout_below="@+id/bbb"
+                            android:layout_centerHorizontal="true"
+                            app:josefin_style="light"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:textColor="@color/redSquareColor"
+                            android:textSize="10sp"
+                            android:layout_below="@+id/ccc"
+                            android:layout_centerHorizontal="true"
+                            app:josefin_style="light"
+                            android:layout_marginBottom="12dp"
+                            android:text="@string/payments_period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:padding="12dp"
+                        android:id="@+id/top_premium"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:textSize="16sp"
+                            app:josefin_style="light"
+                            android:id="@+id/a"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/redSquareColor"
+                            android:text="@string/payments_premium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:text="£1799"
+                            android:layout_below="@+id/a"
+                            android:id="@+id/b"
+                            android:layout_centerInParent="true"
+                            android:textSize="18sp"
+                            app:josefin_style="light"
+                            android:textColor="@color/redSquareColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:text="@string/payments_vat"
+                            android:textSize="6sp"
+                            android:layout_above="@+id/c"
+                            android:layout_toRightOf="@+id/b"
+                            android:layout_centerInParent="true"
+                            app:josefin_style="light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:textColor="@color/redSquareColor"
+                            android:text="100 \nBookings"
+                            android:textSize="16sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/b"
+                            android:id="@+id/c"
+                            app:josefin_style="light"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:textColor="@color/redSquareColor"
+                            android:textSize="10sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/c"
+                            app:josefin_style="light"
+                            android:text="@string/payments_period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <!-- Action Button -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:textSize="18sp"
+                android:id="@+id/payments_continue"
+                android:textColor="@color/whiteSquareColor"
+                android:layout_margin="12dp"
+                android:background="@color/redSquareColor"
+                android:gravity="center_horizontal"
+                android:padding="14dp"
+                android:text="@string/payments_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- ViewPager -->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/subscription_pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <!-- Basic -->
+                <FrameLayout
+                    android:id="@+id/basic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/details_basic"/>
+                </FrameLayout>
+                <!-- Standard -->
+                <FrameLayout
+                    android:id="@+id/standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/details_standard"/>
+                </FrameLayout>
+                <!-- Premium -->
+                <FrameLayout
+                    android:id="@+id/premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/details_premium"/>
+                </FrameLayout>
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <!-- Understanding Price Plans -->
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:id="@+id/understanding"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@drawable/ic_red_attention"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:textSize="14sp"
+                android:text="@string/employer_payments_questions"
+                app:josefin_style="italic"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/redSquareColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

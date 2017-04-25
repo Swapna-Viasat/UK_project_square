@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/whiteSquareColor">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_employer_step_company_title"
+                android:id="@+id/tvEmployerCompanyStepTitle"
+                style="@style/light_big_dark_text"
+                app:josefin_style="light"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/eEmployerCompanyStepNameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    style="@style/square_edit_text"
+                    android:inputType="textCapWords"
+                    android:id="@+id/eEmployerCompanyStepName"
+                    android:hint="@string/sign_up_employer_step_company_name_hint" />
+            </android.support.design.widget.TextInputLayout>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_employer_step_company_add_address_label"
+                android:id="@+id/tvEmployerCompanyStepAddAddressLabel"
+                style="@style/subheader_gray_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eEmployerCompanyStepAddressWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        style="@style/square_edit_text"
+                        android:inputType="textCapWords"
+                        android:id="@+id/eEmployerCompanyStepAddress"
+                        android:hint="@string/sign_up_employer_step_company_add_address_hint" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_employer_step_company_upload_logo_label"
+                android:id="@+id/tvEmployerCompanyStepUploadLogoLabel"
+                style="@style/subheader_gray_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp" />
+
+            <ImageView
+                android:id="@+id/ivEmployerCompanyPicture"
+                android:layout_gravity="center"
+                android:background="#F0F0F0"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/upload_picture"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_employer_step_company_btn_skip"
+                    android:id="@+id/btnEmployerCompanyStepSkip"
+                    style="@style/BaseSkipButton"
+                    android:padding="10dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_employer_step_company_btn_next"
+                    android:id="@+id/btnEmployerCompanyStepNext"
+                    style="@style/BaseButton"
+                    android:padding="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

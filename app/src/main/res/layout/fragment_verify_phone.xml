@@ -1,0 +1,115 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteSquareColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/tvAskForPhoneFirstTitle"
+            style="@style/light_big_dark_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="@string/phone_verification_first_title"
+            app:josefin_style="light" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/tvAskForPhoneSecondTitle"
+            style="@style/subheader_gray_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/phone_verification_second_title" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/askForEmailEditTextWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                android:id="@+id/askForEmailEditText"
+                style="@style/square_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_verification_email_text"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="#999999" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:defaultNameCode="GB"
+                app:keyboardAutoPopOnSearch="true" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/askForPhonePhoneNumberEditTextWrapper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                app:hintEnabled="false">
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/askForPhonePhoneNumberEditText"
+                    style="@style/square_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/phone_verification_phone_text"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:textColorHint="#999999" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            style="@style/caption_dark_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/phone_verification_third_title" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/terms"
+            style="@style/caption_dark_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/phone_verification_third_title_bold"
+            app:josefin_style="bold" />
+
+        <Button
+            android:id="@+id/verify"
+            style="@style/BaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/phone_verification_button_text" />
+
+    </LinearLayout>
+</FrameLayout>

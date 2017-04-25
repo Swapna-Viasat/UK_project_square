@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            style="@style/light_big_dark_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/onboarding_intro"
+            app:josefin_style="light" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            style="@style/subheader_dark_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/sign_up_worker_step_personal_information_title_2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/bobwithplus" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/first_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                android:id="@+id/first_name"
+                style="@style/square_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="@string/sign_up_worker_step_personal_information_first_name_hint"
+                android:inputType="textCapWords"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/last_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                android:id="@+id/last_name"
+                style="@style/square_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sign_up_worker_step_personal_information_last_name_hint"
+                android:inputType="textCapWords"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/zip"
+            style="@style/square_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sign_up_worker_step_personal_information_post_code_hint"
+            android:maxLines="1"
+            android:minLines="1"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                android:id="@+id/password"
+                style="@style/square_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sign_up_worker_step_personal_information_password_mandatory_hint"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                android:id="@+id/password2"
+                style="@style/square_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sign_up_worker_step_personal_information_confirmation_password_mandatory_hint"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/redSquareColor"
+            android:padding="18dp"
+            android:text="@string/next"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            app:josefin_style="semiBold" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,373 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="construction.thesquare.employer.payments.fragment.PaymentFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:text="@string/create_job_card"
+            android:textColor="@color/redSquareColor"
+            android:textSize="18sp"
+            android:layout_margin="12dp"
+            app:josefin_style="italic"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Name -->
+        <android.support.v7.widget.CardView
+            app:cardElevation="6dp"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/create_job_first"
+                        app:josefin_style="light"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:inputType="text|textNoSuggestions|textCapWords"
+                        android:layout_margin="12dp"
+                        android:id="@+id/first"
+                        app:josefin_style="light"
+                        android:paddingBottom="4dp"
+                        android:hint="@string/create_job_first"
+                        android:textColorHint="@color/blackSquareColor"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/create_job_last"
+                        app:josefin_style="light"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:inputType="text|textNoSuggestions|textCapWords"
+                        android:layout_margin="12dp"
+                        android:id="@+id/last"
+                        app:josefin_style="light"
+                        android:paddingBottom="4dp"
+                        android:hint="@string/create_job_last"
+                        android:textColorHint="@color/blackSquareColor"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Card Data -->
+        <android.support.v7.widget.CardView
+            app:cardElevation="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text="@string/create_job_card_number"
+                    app:josefin_style="light"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:inputType="number"
+                    android:layout_margin="12dp"
+                    android:id="@+id/number"
+                    android:maxLength="19"
+                    app:josefin_style="italic"
+                    android:paddingBottom="4dp"
+                    android:hint="@string/create_job_card_number"
+                    android:textColorHint="@color/blackSquareColor"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:text="@string/create_job_expiration"
+                            app:josefin_style="light"
+                            android:textColor="@color/blackSquareColor"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:layout_margin="12dp"
+                                android:id="@+id/month"
+                                android:hint="month"
+                                app:josefin_style="light"
+                                android:paddingBottom="4dp"
+                                android:textColorHint="@color/blackSquareColor"
+                                android:textColor="@color/blackSquareColor"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <construction.thesquare.shared.view.widget.JosefinSansEditText
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:layout_marginLeft="6dp"
+                                android:layout_margin="12dp"
+                                android:id="@+id/year"
+                                android:hint="year"
+                                app:josefin_style="light"
+                                android:paddingBottom="4dp"
+                                android:textColorHint="@color/blackSquareColor"
+                                android:textColor="@color/blackSquareColor"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansTextView
+                            android:text="@string/create_job_cvc"
+                            app:josefin_style="light"
+                            android:textColor="@color/blackSquareColor"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:layout_margin="12dp"
+                            android:id="@+id/cvc"
+                            app:josefin_style="light"
+                            android:paddingBottom="4dp"
+                            android:hint="@string/create_job_cvc"
+                            android:textColorHint="@color/blackSquareColor"
+                            android:textColor="@color/blackSquareColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Voucher -->
+        <android.support.v7.widget.CardView
+            app:cardElevation="6dp"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text="@string/payments_voucher"
+                    app:josefin_style="light"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:inputType="text|textNoSuggestions|textCapWords"
+                    android:layout_margin="12dp"
+                    android:id="@+id/voucher"
+                    app:josefin_style="light"
+                    android:paddingBottom="4dp"
+                    android:hint="@string/payments_voucher"
+                    android:textColorHint="@color/blackSquareColor"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Address -->
+        <android.support.v7.widget.CardView
+            app:cardElevation="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/payments_address1"
+                        app:josefin_style="light"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:inputType="text|textNoSuggestions|textCapWords"
+                        android:layout_margin="12dp"
+                        android:id="@+id/address1"
+                        android:hint="@string/payments_address2"
+                        app:josefin_style="light"
+                        android:paddingBottom="4dp"
+                        android:textColorHint="@color/blackSquareColor"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:inputType="text|textNoSuggestions|textCapWords"
+                        android:layout_margin="12dp"
+                        android:id="@+id/city"
+                        android:hint="@string/payments_city"
+                        app:josefin_style="light"
+                        android:paddingBottom="4dp"
+                        android:textColorHint="@color/blackSquareColor"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:inputType="text|textNoSuggestions|textCapWords"
+                        android:layout_margin="12dp"
+                        android:id="@+id/country"
+                        android:hint="@string/payments_country"
+                        app:josefin_style="light"
+                        android:paddingBottom="4dp"
+                        android:textColorHint="@color/blackSquareColor"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:text="@string/payments_postcode"
+                        app:josefin_style="light"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansEditText
+                        android:inputType="text|textNoSuggestions|textCapWords"
+                        android:layout_margin="12dp"
+                        android:id="@+id/postcode"
+                        app:josefin_style="light"
+                        android:paddingBottom="4dp"
+                        android:textColorHint="@color/blackSquareColor"
+                        android:textColor="@color/blackSquareColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Action -->
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:text="@string/create_job_confirm"
+            android:id="@+id/confirm"
+            app:josefin_style="italic"
+            android:textColor="@color/whiteSquareColor"
+            android:background="@color/redSquareColor"
+            android:textAlignment="center"
+            android:layout_margin="12dp"
+            android:padding="14dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

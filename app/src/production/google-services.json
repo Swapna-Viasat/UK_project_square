@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "325605225928",
+    "firebase_url": "https://the-square-app.firebaseio.com",
+    "project_id": "the-square-app",
+    "storage_bucket": "the-square-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325605225928:android:60fe6abcae8d1f37",
+        "android_client_info": {
+          "package_name": "construction.thesquare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325605225928-g5nm9rdopcsho7q12o8k0k68vvpr36ui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx9d-Gs1imH03rzWALqaLom_jxg-8288c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

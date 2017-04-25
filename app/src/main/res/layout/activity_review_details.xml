@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_job_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_margin="12dp"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/review_details_name"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/redSquareColor"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/review_details_overview"
+                android:text="@string/worker_reviews_again"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- Quality of work -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field1"
+                android:layout_gravity="center"
+                android:text="@string/worker_reviews_quality"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_quality"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- Reliability -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field2"
+                android:layout_gravity="center"
+                android:text="@string/worker_reviews_reliability"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_reliability"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- Attitude -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field3"
+                android:layout_gravity="center"
+                android:text="@string/worker_reviews_attitude"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_attitude"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!-- Safety -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/field4"
+                android:layout_gravity="center"
+                android:text="@string/worker_reviews_safety"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <construction.thesquare.shared.view.widget.RatingView
+                app:editable="no"
+                android:layout_gravity="center"
+                android:id="@+id/rating_view_safety"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#ededed"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteSquareColor">
+
+    <ImageButton
+        android:id="@+id/actionbar_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:background="@color/transparentSquareColor"
+        android:padding="10dp" />
+
+    <ImageButton
+        android:id="@+id/actionbar_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_add_circle_black_24dp"
+        android:background="@color/transparentSquareColor"
+        android:layout_alignParentRight="true"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/actionbar_back_button"
+        android:layout_toEndOf="@id/actionbar_back_button"
+        android:layout_toLeftOf="@id/actionbar_add_button"
+        android:layout_toStartOf="@id/actionbar_add_button">
+
+        <LinearLayout
+            android:id="@+id/actionbar_activity_indicator_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/question"
+                android:textSize="20dp"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@color/blackSquareColor"
+                app:josefin_style="italic"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                app:ael_expanded="false"
+                android:orientation="vertical"
+                app:ael_duration="500"
+                android:id="@+id/expandableLayoutTopFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:layout_margin="5dp"
+                    android:textColor="@color/blackSquareColor"
+                     android:id="@+id/answer"
+                    app:josefin_style="light"
+                    android:textSize="18dp"
+                    android:lineSpacingExtra="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:tint="@color/redSquareColor"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_close" />
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/redSquareColor" />
+</android.support.v7.widget.CardView>

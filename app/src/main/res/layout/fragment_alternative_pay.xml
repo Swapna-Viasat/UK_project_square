@@ -1,0 +1,230 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="construction.thesquare.employer.payments.fragment.AlternativePayFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Title Desc-->
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:textColor="@color/redSquareColor"
+            android:textSize="16sp"
+            app:josefin_style="light"
+            android:textAlignment="center"
+            android:id="@+id/title_desc"
+            android:text="@string/payments_alt_title_desc"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!-- Title -->
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:textColor="@color/redSquareColor"
+            android:textSize="20sp"
+            app:josefin_style="light"
+            android:id="@+id/title"
+            android:textAlignment="center"
+            android:text="@string/payments_alt_title"
+            android:layout_margin="24dp"
+            android:layout_below="@+id/title_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Plan Selection -->
+        <android.support.v7.widget.CardView
+            android:layout_margin="12dp"
+            app:cardElevation="4dp"
+            android:id="@+id/alt_pay_select"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/payments_alt_spinner_title"
+                android:textSize="16sp"
+                app:josefin_style="light"
+                android:layout_margin="24dp"
+                android:textColor="@color/blackSquareColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_margin="24dp"
+                android:id="@+id/payments_plan_spinner"
+                android:layout_gravity="end|right"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"/>
+        </android.support.v7.widget.CardView>
+
+        <!-- Name -->
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/alt_pay_select"
+            app:cardElevation="4dp"
+            android:layout_margin="12dp"
+            android:id="@+id/alt_pay_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text="@string/payments_alt_name"
+                    android:textSize="16sp"
+                    app:josefin_style="light"
+                    android:id="@+id/name_title"
+                    android:layout_marginTop="24dp"
+                    android:layout_margin="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/alt_pay_name_input"
+                    android:layout_marginLeft="24dp"
+                    app:josefin_style="light"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Email -->
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/alt_pay_name"
+            app:cardElevation="4dp"
+            android:layout_margin="12dp"
+            android:id="@+id/alt_pay_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text="@string/payments_alt_email"
+                    android:textSize="16sp"
+                    app:josefin_style="light"
+                    android:id="@+id/email_title"
+                    android:layout_marginTop="24dp"
+                    android:layout_margin="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/alt_pay_email_input"
+                    android:layout_marginLeft="24dp"
+                    app:josefin_style="light"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Order -->
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/alt_pay_email"
+            app:cardElevation="4dp"
+            android:layout_margin="12dp"
+            android:id="@+id/alt_pay_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:text="@string/payments_alt_order"
+                    android:textSize="16sp"
+                    android:id="@+id/order_title"
+                    android:layout_marginTop="24dp"
+                    android:layout_margin="24dp"
+                    app:josefin_style="light"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansEditText
+                    android:id="@+id/alt_pay_order_input"
+                    android:layout_marginLeft="24dp"
+                    app:josefin_style="light"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/blackSquareColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Action Button and Notes -->
+        <LinearLayout
+            android:layout_below="@+id/alt_pay_order"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Confirm -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:id="@+id/payments_alt_confirm"
+                android:text="@string/payments_alt_confirm"
+                android:gravity="center"
+                android:background="@color/redSquareColor"
+                android:textSize="20sp"
+                app:josefin_style="italic"
+                android:padding="12dp"
+                android:layout_margin="12dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Subtitle -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:textColor="@color/redSquareColor"
+                android:textSize="16sp"
+                app:josefin_style="light"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/payments_alt_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Note -->
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:text="@string/payments_alt_note"
+                android:textColor="@color/redSquareColor"
+                android:textSize="16sp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="24dp"
+                app:josefin_style="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/whiteSquareColor"
+    android:orientation="vertical"
+    android:clickable="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp">
+
+            <construction.thesquare.shared.view.widget.JosefinSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_employer_step_2_title"
+                android:id="@+id/tvEmployerSecondStepTitle"
+                style="@style/light_big_dark_text"
+                app:josefin_style="light"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_employer_step_2_title_2"
+                    android:id="@+id/tvEmployerSecondStepTitle2"
+                    style="@style/subheader_dark_text" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_employer_step_2_title_3"
+                    android:id="@+id/tvEmployerSecondStepTitle3"
+                    style="@style/subheader_dark_text"
+                    android:layout_marginTop="2dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/eEmployerSecondStepKeyContactFirstNameWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            style="@style/square_edit_text"
+                            android:inputType="textCapWords"
+                            android:id="@+id/eEmployerSecondStepKeyContactFirstName"
+                            android:hint="@string/sign_up_employer_step_2_contact_first_name_hint"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/eEmployerSecondStepKeyContactLastNameWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            style="@style/square_edit_text"
+                            android:inputType="textCapWords"
+                            android:id="@+id/eEmployerSecondStepKeyContactLastName"
+                            android:hint="@string/sign_up_employer_step_2_contact_last_name_hint"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/eEmployerSecondStepKeyContactPhoneWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/eEmployerSecondStepKeyContactPhone"
+                            android:hint="@string/sign_up_employer_step_2_contact_telephone_hint"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            style="@style/square_edit_text"
+                            android:inputType="textCapWords"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/eEmployerSecondStepKeyContactEmailWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <construction.thesquare.shared.view.widget.JosefinSansEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/eEmployerSecondStepKeyContactEmail"
+                            android:hint="@string/sign_up_employer_step_2_contact_email_hint"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            style="@style/square_edit_text"
+                            android:inputType="textCapWords"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/tvEmployerSecondStepTimesheetTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_employer_step_2_timesheet_title"
+                    style="@style/TextGraftrst.Black.Bold.Medium"
+                    android:layout_marginTop="20dp" />
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/tvEmployerSecondStepTimesheetSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_employer_step_2_timesheet_subtitle"
+                    style="@style/caption_dark_text"
+                    android:layout_marginTop="8dp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutSelectableEmployerSecondStepTimesheetOne"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextGraftrst.Black.Medium"
+                        android:id="@+id/cbEmployerSecondStepTimesheetOption1"
+                        android:layout_marginTop="8dp"
+                        android:clickable="false" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/tvEmployerSecondStepTimesheetOption1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_up_employer_step_2_timesheet_option_one"
+                        style="@style/subheader_dark_text"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutSelectableEmployerSecondStepTimesheetTwo"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextGraftrst.Black.Medium"
+                        android:id="@+id/cbEmployerSecondStepTimesheetOption2"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false" />
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/tvEmployerSecondStepTimesheetOption2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_up_employer_step_2_timesheet_option_two"
+                        style="@style/subheader_dark_text"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/tvEmployerSecondStepWorkerPaymentsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_employer_step_2_worker_payments_title"
+                    style="@style/subheader_dark_text"
+                    app:josefin_style="bold"
+                    android:layout_marginTop="30dp"/>
+
+                <construction.thesquare.shared.view.widget.JosefinSansTextView
+                    android:id="@+id/tvEmployerSecondStepWorkerPaymentsSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_employer_step_2_worker_payments_subtitle"
+                    style="@style/caption_dark_text"
+                    android:layout_marginTop="8dp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutSelectableEmployerSecondStepWorkerPaymentsOne"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextGraftrst.Black.Medium"
+                        android:id="@+id/cbEmployerSecondStepWorkerPaymentOption1"
+                        android:layout_marginTop="8dp"
+                        android:clickable="false"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/tvEmployerSecondStepWorkerPaymentOption1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_up_employer_step_2_worker_option_one"
+                        style="@style/subheader_dark_text"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutSelectableEmployerSecondStepWorkerPaymentsTwo"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextGraftrst.Black.Medium"
+                        android:id="@+id/cbEmployerSecondStepWorkerPaymentOption2"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false"/>
+
+                    <construction.thesquare.shared.view.widget.JosefinSansTextView
+                        android:id="@+id/tvEmployerSecondStepWorkerPaymentOption2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_up_employer_step_2_worker_option_two"
+                        style="@style/subheader_dark_text"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="bottom">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/skip_this_until_later"
+            android:id="@+id/btnEmployerSecondStepSkip"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginEnd="1dp"
+            style="@style/BaseSkipButton"
+            android:padding="10dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/next"
+            android:id="@+id/btnEmployerSecondStepNext"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
+            style="@style/BaseButton"
+            android:padding="10dp"/>
+    </LinearLayout>
+</LinearLayout>

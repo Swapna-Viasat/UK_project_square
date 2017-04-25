@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <construction.thesquare.shared.view.widget.JosefinSansTextView
+        android:text="@string/employer_dialog_withdraw_offer"
+        app:josefin_style="bold"
+        android:textColor="@color/blackSquareColor"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/no"
+            android:text="NO"
+            android:textColor="@color/blackSquareColor"
+            android:padding="8dp"
+            android:background="@drawable/bg_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <construction.thesquare.shared.view.widget.JosefinSansTextView
+            android:id="@+id/yes"
+            android:text="YES"
+            android:layout_marginLeft="12dp"
+            android:padding="8dp"
+            android:background="@color/redSquareColor"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
